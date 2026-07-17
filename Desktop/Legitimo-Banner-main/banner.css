@@ -94,7 +94,8 @@ margin-bottom: 0;
 font-weight: 800;
 color: white;
 margin-top: 1vh;
-font-size: clamp(16px, 1vw, 32px);}
+font-size: 1vw;
+}
 
 .continuarlendotext{
     margin-left: 0.5vw;
