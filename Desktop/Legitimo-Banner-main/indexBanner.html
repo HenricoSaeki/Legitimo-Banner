@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fantasia.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://googleapis.com" rel="stylesheet">
+    <script src="script.js" defer></script>
+    <title>indexBanner</title>
+</head>
+<body>
+    <div class="div-menu">
+        <div class="space-index-banner">
+            <div class="track">
+                 <div class="outside active">
+                     <div class="banner-livraria">
+                     <img src="./imagens/bi-1.webp" alt="Banner 1" class="banner-image">
+                     </div>
+                </div>
+                <div class="outside">
+                     <div class="banner-livraria">
+                     <img src="./imagens/bi-2.webp" alt="Banner 2" class="banner-image">
+                     
+                     </div>
+                </div>
+                <div class="outside">
+                     <div class="banner-livraria">
+                     <img src="./imagens/bi-3.webp" alt="Banner 3" class="banner-image">
+                     
+                     </div>
+                </div>
+                <div class="outside">
+                     <div class="banner-livraria">
+                     <img src="./imagens/bi-4.webp" alt="Banner 4" class="banner-image">
+                     
+                     </div>
+                </div>
+                <div class="outside">
+                     <div class="banner-livraria">
+                     <img src="./imagens/bi-5.webp" alt="Banner 5" class="banner-image">
+                     
+                     </div>
+                </div>
+        </div>
+        <div class="arrows">
+                     <img src="./imagens/arrow-right.png" class="banner-next">
+                     <img src="./imagens/arrow-left.png" class="banner-prev">
+        </div>
+        <div class="balls">
+            <div class="ball ball-active"></div>
+            <div class="ball"></div>
+            <div class="ball"></div>
+            <div class="ball"></div>
+            <div class="ball"></div>
+        </div>
+    </div>
+    <script>
+   document.addEventListener("DOMContentLoaded", () => {
+
+    const track = document.querySelector(".track");
+    const next = document.querySelector(".banner-next");
+    const prev = document.querySelector(".banner-prev");
+    const balls = document.querySelectorAll(".ball");
+    let indiceBola = 0;
+    let animando = false;
+    function atualizarBolas() {
+        if (indiceBola >= balls.length) {
+            indiceBola = 0;
+        }
+        else if(indiceBola < 0) {
+            indiceBola = balls.length - 1;
+        }
+        balls.forEach((ball, index) => {
+            if (index === indiceBola) {
+                ball.classList.add("ball-active");
+            } else {
+                ball.classList.remove("ball-active");
+            }
+        });
+    }
+    function proximoBanner() {
+
+        if (animando) return;
+
+        animando = true;
+
+        track.style.transform = "translateX(-100%)";
+
+        track.addEventListener("transitionend", function fim() {
+
+            track.appendChild(track.firstElementChild);
+
+            track.style.transition = "none";
+            track.style.transform = "translateX(0)";
+
+            track.offsetHeight;
+
+            track.style.transition = "transform .6s ease-in-out";
+
+            animando = false;
+
+            track.removeEventListener("transitionend", fim);
+        });
+        clearInterval(intervalo);
+        iniciarIntervalo();
+        indiceBola++;
+        atualizarBolas();
+    }
+
+    next.addEventListener("click", proximoBanner);
+
+    prev.addEventListener("click", () => {
+
+        if (animando) return;
+
+        animando = true;
+
+        track.style.transition = "none";
+
+        track.prepend(track.lastElementChild);
+
+        track.style.transform = "translateX(-100%)";
+
+        track.offsetHeight;
+
+        track.style.transition = "transform .6s ease-in-out";
+
+        requestAnimationFrame(() => {
+            track.style.transform = "translateX(0)";
+        });
+
+        track.addEventListener("transitionend", function fim() {
+
+            animando = false;
+
+            track.removeEventListener("transitionend", fim);
+        });
+        indiceBola--;
+        atualizarBolas();
+    });
+    let intervalo;
+    // PASSAGEM AUTOMÁTICA
+    function iniciarIntervalo(){
+    intervalo = setInterval(() => {
+        proximoBanner();
+    }, 5000);
+    }
+    iniciarIntervalo();
+});
+</script>
+</body>
+</html>
