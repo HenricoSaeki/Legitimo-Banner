@@ -205,6 +205,17 @@ h1,h2,h3,h4,h5,h6,p{margin:0;}
 
 
 
+
+
+
+
+
+
+
+
+
+
+
 /*Fazendo a parte do banner da Index*/
 
 
@@ -221,6 +232,7 @@ h1,h2,h3,h4,h5,h6,p{margin:0;}
     width: 100%;
     height: 100%;
     transition: transform .6s ease-in-out;
+    cursor: pointer;
 }
 
 .outside {
@@ -278,6 +290,7 @@ h1,h2,h3,h4,h5,h6,p{margin:0;}
     align-items: flex-end;
     gap: 10px;
     margin-bottom: 30px;
+    pointer-events: none;
 }
 .ball{
     width: 25px;
@@ -290,4 +303,77 @@ h1,h2,h3,h4,h5,h6,p{margin:0;}
 .ball-active{
     background-color: rgba(255, 255, 255, 0.8);
     border: 1px solid white;
+}
+
+
+
+
+
+/* Cards do Index*/
+
+.div-cards-init{
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.card-init{
+    background-color: white;
+    width: 32.5%;
+    height: auto;
+    border-radius: 10px;
+    border:2px solid #ECECEC;
+    box-shadow:0 2px 10px rgba(0,0,0,.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 40px;
+    padding-top: 10px;
+}
+.card-init-title{
+    font-family: 'Inter', sans-serif;
+    font-weight: bolder;
+    font-size: 40px;
+    color: black;
+}
+.books-card-init{
+    width: 90%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.book-card-init{
+    width: 45%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+.image-book-card-init{
+    width: 200px;
+    height: 320px;
+    border-radius: 2%;
+    object-fit: cover;
+}
+.title-book-card-init{
+    width: 85%;
+    height: 60px;
+    font-size: 20px;
+    color: #363636;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    text-align: center;
+}
+.discount-book-card-init{
+    font-size: 18px;
+    color: #FFA425;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
 }
