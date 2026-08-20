@@ -334,6 +334,8 @@ h1,h2,h3,h4,h5,h6,p{margin:0;}
     padding-left: 10px;
     padding-bottom: 40px;
     padding-top: 10px;
+    position: relative;
+    z-index: 1;
 }
 .card-init-title{
     font-family: 'Inter', sans-serif;
@@ -372,8 +374,22 @@ h1,h2,h3,h4,h5,h6,p{margin:0;}
     text-align: center;
 }
 .discount-book-card-init{
-    font-size: 18px;
+    font-size: 20px;
     color: #FFA425;
     font-family: 'Inter', sans-serif;
     font-weight: 500;
+}
+.discount-book-card-init-span{
+    font-size: 22px;
+    font-weight: 600;
+}
+.ver-todos-card-init{
+    position: absolute;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    right: 0%;
+    bottom: 0%;
+}
+.ver-todos-card-init-text{
 }
