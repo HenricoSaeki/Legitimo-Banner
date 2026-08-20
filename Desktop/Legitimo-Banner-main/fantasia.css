@@ -66,6 +66,24 @@ h1,h2,h3,h4,h5,h6,p{margin:0;}
     gap:9px;
     border-radius:6px;
 }
+.card-1-enumerado{
+    position:absolute;
+    width:27px;
+    height:27px;
+    border-radius: 8px;
+    background-color: #EADFbf;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-top:5px;
+    left: 10px;
+}
+.card-1-enumerado-numero{
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 100%;
+    color: #5E4500;
+}
 .retangulocima{
     left:114px;
     width:127px;
@@ -158,6 +176,7 @@ h1,h2,h3,h4,h5,h6,p{margin:0;}
     font:400 16px Inter,sans-serif;
     color:#6A6A6A;
     text-decoration:line-through;
+    height: 8%;
 }
 .precoDiv{
     display:flex;
@@ -340,8 +359,9 @@ h1,h2,h3,h4,h5,h6,p{margin:0;}
 .card-init-title{
     font-family: 'Inter', sans-serif;
     font-weight: bolder;
-    font-size: 40px;
+    font-size: clamp(20px, 2vw, 40px);
     color: black;
+    text-align: center;
 }
 .books-card-init{
     width: 90%;
@@ -351,15 +371,22 @@ h1,h2,h3,h4,h5,h6,p{margin:0;}
     align-items: center;
 }
 .book-card-init{
-    width: 45%;
+    width: 46%;
     height: auto;
     display: flex;
     flex-direction: column;
     gap: 10px;
     align-items: center;
+    transition: 0.5s;
+    cursor: pointer;
+    border: 1px solid transparent;
+}
+.book-card-init:hover{
+    border: 1px solid #111111;
+    background-color: #f1f1f1;
 }
 .image-book-card-init{
-    width: 200px;
+    width: 100%;
     height: 320px;
     border-radius: 2%;
     object-fit: cover;
@@ -367,29 +394,104 @@ h1,h2,h3,h4,h5,h6,p{margin:0;}
 .title-book-card-init{
     width: 85%;
     height: 60px;
-    font-size: 20px;
+    font-size: clamp(12px, 2vw, 18px);
     color: #363636;
     font-family: 'Inter', sans-serif;
     font-weight: 500;
     text-align: center;
 }
 .discount-book-card-init{
-    font-size: 20px;
+    font-size: clamp(12px, 2vw, 18px);
     color: #FFA425;
     font-family: 'Inter', sans-serif;
     font-weight: 500;
 }
 .discount-book-card-init-span{
-    font-size: 22px;
+    font-size: clamp(14px, 2.5vw, 20px);
     font-weight: 600;
 }
 .ver-todos-card-init{
     position: absolute;
     display: flex;
-    gap: 10px;
+    gap: 4px;
     align-items: center;
-    right: 0%;
-    bottom: 0%;
+    width: auto;
+    height: auto;
+    justify-content: right;
+    padding: 5px;
+    right: 0;
+    bottom: 0;
+    transition: 0.8s;
+    cursor: pointer;
 }
 .ver-todos-card-init-text{
+    font-size: clamp(8px, 2vw, 15px);
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    color:#C8060A
+}
+.ver-todos-icon{
+    width: 32px;
+    height: auto;
+}
+.ver-todos-card-init:hover{
+    scale: calc(1.03);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Div dos cards dos produtos*/
+.div-cards-carousel{
+    width: 100%;
+    height: auto;
+    padding-right: 85px;
+    padding-left: 85px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: left;
+}
+.div-cards-carousel-index{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.top-bar-cards{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.top-bar-cards-title{
+    font-size: clamp(20px, 2vw, 40px);
+    font-family: 'Inter', sans-serif;
+    font-weight: bolder;
+    color: black;
+}
+.ver-todos-top-bar-cards{
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    width: auto;
+    height: auto;
+    justify-content: right;
+    right: 0;
+    bottom: 0;
+    transition: 0.8s;
+    cursor: pointer;
+}
+.ver-todos-top-bar-cards:hover{
+    scale: calc(1.03);
 }
