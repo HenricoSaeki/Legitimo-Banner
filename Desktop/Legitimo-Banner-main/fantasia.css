@@ -26,8 +26,8 @@ h1,h2,h3,h4,h5,h6,p{margin:0;}
 
 .card1{
     background:#fff;
-    width:253px;
-    height:452px;
+    width: 15%;
+    aspect-ratio: 253 / 452;
     display:flex;
     flex-direction:column;
     gap:5px;
@@ -43,12 +43,12 @@ h1,h2,h3,h4,h5,h6,p{margin:0;}
     display:flex;
     justify-content:center;
     width:100%;
-    height:217px;
+    height: auto;
 }
 
 .book{
-    width:152px;
-    height:217px;
+    width: 65%;
+    aspect-ratio: 152/217;
     margin-top:11px;
     border-radius:5px;
     user-select:none;
@@ -545,4 +545,12 @@ h1,h2,h3,h4,h5,h6,p{margin:0;}
     font-family: 'Inter', sans-serif;
     font-weight: 400;
     color: #545454;
+}
+
+
+
+
+
+@media(max-width: 1920px){
+
 }
