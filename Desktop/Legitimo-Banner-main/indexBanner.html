@@ -7,11 +7,51 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://googleapis.com" rel="stylesheet">
     <link rel="stylesheet" href="styleHeader.css">
+    <link rel="stylesheet" href="lateralBar.css">
+    <link rel="stylesheet" href="indexFooter.css">
     <link href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400;900&display=swap" rel="stylesheet">
     <script src="script.js" defer></script>
     <title>indexBanner</title>
 </head>
 <body>
+   <div class="lateral-bar">
+        <section class="lateral-bar-header">
+            <div class="lateral-bar-userDiv">
+                <img src="./imagens/cliente_iconbar.png" class="lateral-bar-userDiv-image"/>
+                <h2 class="lateral-bar-userDiv-name">Usuário não conectado</h2>
+            </div>
+            <img src="./imagens/leave_iconbar.png" class="lateral-bar-userDiv-leave"/>
+        </section>
+        <section class="lateral-bar-content">
+            <div class="lateral-bar-content-block">
+                <h2 class="lateral-bar-content-block-title">Destaques</h2>
+                <li class="lateral-bar-content-block-list">
+                    <a class="lateral-bar-content-block-list-item">Mais vendidos</a>
+                    <a class="lateral-bar-content-block-list-item">Ofertas do mês</a>
+                    <a class="lateral-bar-content-block-list-item">Bem avaliados</a>
+                </li>
+            </div>
+            <div class="lateral-bar-content-block">
+                <h2 class="lateral-bar-content-block-title">Para você</h2>
+                <li class="lateral-bar-content-block-list">
+                    <a class="lateral-bar-content-block-list-item">Talvez você goste</a>
+                    <a class="lateral-bar-content-block-list-item">Minhas compras</a>
+                    <a class="lateral-bar-content-block-list-item">Meus cupons</a>
+                    <a class="lateral-bar-content-block-list-item">Avaliações disponíveis</a>
+                    <a class="lateral-bar-content-block-list-item">Favoritos</a>
+                </li>
+            </div>
+            <div class="lateral-bar-content-block">
+                <h2 class="lateral-bar-content-block-title">Escolha do seu jeito</h2>
+                <li class="lateral-bar-content-block-list">
+                    <a class="lateral-bar-content-block-list-item">Gêneros</a>
+                    <a class="lateral-bar-content-block-list-item">Procurar livros</a>
+                    <a class="lateral-bar-content-block-list-item">Autores</a>
+                    <a class="lateral-bar-content-block-list-item">Histórico de navegação</a>
+                </li>
+            </div>
+        </section>
+    </div>
    <header>
         <section class="uper-header">
             <img src="./imagens/logoLivraria.png" class="logo-header">
@@ -1878,6 +1918,53 @@
     </div>
       </div>
      </div>
+   <footer>
+        <section class="footer-space-top"></section>
+        <section class="footer-content">
+            <div class="footer-topics">
+                <h2 class="footer-topics-title">Sobre nós</h2>
+                <div class="footer-topics-list">
+                    <a class="footer-topics-link" >Legítimo</a>
+                    <a class="footer-topics-link" >Créditos</a>
+                    <a class="footer-topics-link" >Informações corporativas</a>
+                    <a class="footer-topics-link" >Tecnologias</a>
+                </div>
+            </div>
+            <div class="footer-topics">
+                <h2 class="footer-topics-title">Coopere conosco</h2>
+                <div class="footer-topics-list">
+                    <a class="footer-topics-link" >Doe livros usados</a>
+                    <a class="footer-topics-link" >Seja um fornecedor</a>
+                    <a class="footer-topics-link" >Avalie livros comprados</a>
+                    <a class="footer-topics-link" >Doe dinheiro</a>
+                </div>
+            </div>
+            <div class="footer-topics-center">
+                <a class="footer-topics-center-backstart">Voltar ao início</a>
+                <img src="./imagens/iconFooter.png" class="footer-topics-center-icon"/>
+            </div>
+            <div class="footer-topics">
+                <h2 class="footer-topics-title">Pagamento</h2>
+                <div class="footer-topics-list">
+                    <a class="footer-topics-link" >Meios de pagamento</a>
+                    <a class="footer-topics-link" >Bônus disponíveis</a>
+                    <a class="footer-topics-link" >Termos e condições</a>
+                </div>
+            </div>
+            <div class="footer-topics">
+                <h2 class="footer-topics-title">Contato</h2>
+                <div class="footer-topics-list">
+                    <a class="footer-topics-link" >Ajuda por telefone</a>
+                    <a class="footer-topics-link" >Visite a loja física</a>
+                    <a class="footer-topics-link" >Frete e prazo de entrega</a>
+                    <a class="footer-topics-link" >Reembolsos</a>
+                </div>
+            </div>
+        </section>
+        <section class="footer-foot">
+            <h2 class="footer-foot-line"> <span class="footer-foot-span">Condições de uso</span> | <span class="footer-foot-span">Cookies</span> | <span class="footer-foot-span">@2026 Legitimolivros.com</span></h2>
+        </section>
+    </footer>
     <script>
    document.addEventListener("DOMContentLoaded", () => {
     const totalList1 = document.querySelector(".div-cards-carousel-total-1");
@@ -1906,6 +1993,11 @@
     const valueMin4 = document.querySelector(".start-page-top-bar-4-1");
     const valueMax4 = document.querySelector(".total-pages-top-bar-4-2");
     const divPartsCard = document.querySelector(".parts-card");
+
+    const lateralBar = document.querySelector('.lateral-bar');
+    const lateralBarLeave = document.querySelector('.lateral-bar-userDiv-leave');
+    const headerMenu = document.querySelector('.deeper-header-menu-icon');
+
 
     const track = document.querySelector(".track");
     const next = document.querySelector(".banner-next");
@@ -2217,6 +2309,12 @@
     });
 });
 
+        lateralBarLeave.addEventListener('click', () => {
+            lateralBar.style.left = '-35%';
+        });
+        headerMenu.addEventListener('click', () => {
+            lateralBar.style.left = '0%';
+        });
 });
 </script>
 </body>

@@ -18,32 +18,44 @@
         <section class="lateral-bar-content">
             <div class="lateral-bar-content-block">
                 <h2 class="lateral-bar-content-block-title">Destaques</h2>
-                <li class="lateral-bar-content-block-list">
+                <div class="lateral-bar-content-block-list">
                     <a class="lateral-bar-content-block-list-item">Mais vendidos</a>
                     <a class="lateral-bar-content-block-list-item">Ofertas do mês</a>
                     <a class="lateral-bar-content-block-list-item">Bem avaliados</a>
-                </li>
+                </div>
             </div>
             <div class="lateral-bar-content-block">
                 <h2 class="lateral-bar-content-block-title">Para você</h2>
-                <li class="lateral-bar-content-block-list">
+                <div class="lateral-bar-content-block-list">
                     <a class="lateral-bar-content-block-list-item">Talvez você goste</a>
                     <a class="lateral-bar-content-block-list-item">Minhas compras</a>
                     <a class="lateral-bar-content-block-list-item">Meus cupons</a>
                     <a class="lateral-bar-content-block-list-item">Avaliações disponíveis</a>
                     <a class="lateral-bar-content-block-list-item">Favoritos</a>
-                </li>
+                </div>
             </div>
             <div class="lateral-bar-content-block">
                 <h2 class="lateral-bar-content-block-title">Escolha do seu jeito</h2>
-                <li class="lateral-bar-content-block-list">
+                <div class="lateral-bar-content-block-list">
                     <a class="lateral-bar-content-block-list-item">Gêneros</a>
                     <a class="lateral-bar-content-block-list-item">Procurar livros</a>
                     <a class="lateral-bar-content-block-list-item">Autores</a>
                     <a class="lateral-bar-content-block-list-item">Histórico de navegação</a>
-                </li>
+                </div>
             </div>
         </section>
     </div>
+    <script>
+        const lateralBar = document.querySelector('.lateral-bar');
+        const lateralBarLeave = document.querySelector('.lateral-bar-userDiv-leave');
+        const headerMenu = document.querySelector('.deeper-header-menu-icon');
+
+        lateralBarLeave.addEventListener('click', () => {
+            lateralBar.style.left = '-35%';
+        });
+        headerMenu.addEventListener('click', () => {
+            lateralBar.style.left = '0%';
+        });
+    </script>
 </body>
 </html>
