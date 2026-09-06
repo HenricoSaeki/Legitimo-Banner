@@ -115,6 +115,35 @@ h1,h2,h3,h4,h5,h6,p{margin:0;}
     width: 60%;
     background:#EADFbf;
 }
+.retangulocima-historico{
+    width: 30%;
+    aspect-ratio: 127/27;
+    background:#EADFbf;
+}
+.retangulocimaNovo-historico{
+    aspect-ratio: 101/27;
+    width: 25%;
+    background:#D6F2CD;
+}
+.retangulocimaBemavaliado-historico{
+    width: 37%;
+    aspect-ratio: 152/27;
+    background:#EADFbf;
+}
+.retangulocima-historico,
+.retangulocimaNovo-historico,
+.retangulocimaBemavaliado-historico{
+    position:absolute;
+    margin-top:5px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    right: 5%;
+    top: -10%;
+    gap:9px;
+    border-radius:6px;
+}
+
 
 .imgetiqueta{
     height: 80% ;user-select:none;
@@ -493,7 +522,7 @@ h1,h2,h3,h4,h5,h6,p{margin:0;}
     display: flex;
     flex-direction: row;
     justify-content: left;
-    overflow: hidden;
+    overflow: visible;
     position: relative;
     margin-bottom: 30px;
 }
@@ -955,6 +984,9 @@ h1,h2,h3,h4,h5,h6,p{margin:0;}
     padding: 8px;
     cursor: pointer;
     transition: 0.3s;
+    position: relative;
+    overflow: visible;
+    z-index: 2;
 }
 .banner2:hover{
     background-color: #f1f1f1;
