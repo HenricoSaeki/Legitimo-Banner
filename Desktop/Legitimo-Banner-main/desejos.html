@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleHeader.css">
+    <link rel="stylesheet" href="desejos.css">
+    <link rel="stylesheet" href="indexFooter.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&family=Mada:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+    <title>Lista de desejos</title>
+</head>
+<body>
+    <header>
+        <section class="uper-header">
+            <img src="./imagens/logoLivraria.png" class="logo-header">
+            <div class="search-bar-header">
+                <a class="icon-search-bar-font"><img src="./imagens/SearchbarIcon.png" class="icon-search-bar"></a>
+                <input type="text" class="input-search-bar" placeholder="Digite um livro, autor ou editora..."/>
+            </div>
+            <a class="carrinho-header">
+                <h2 class="tittle-carrinho-header">Carrinho de compras</h2>
+                <div class="icon-carrinho-header">
+                    <img src="./imagens/CartIcon.png" class="image-icon-carrinho-header">
+                    <h3 class="number-carrinho-header">0</h3>
+                </div>
+            </a>
+            <div class="entry-header">
+                <a class="tittle-login-header">Olá, Sr. Anônimo</a>
+            </div>
+        </section>
+        <section class="deeper-header">
+            <a class="font-deeper-header-menu"><img src="./imagens/menuIcon.png" class="deeper-header-menu-icon"></a>
+            <div class="main-items-deeper">
+                <a class="main-items-deeper-text">Ofertas</a>
+                <a class="main-items-deeper-text">Destaques</a>
+                <a class="main-items-deeper-text">Lançamentos</a>
+                <a class="main-items-deeper-text">Contato</a>
+                <a class="main-items-deeper-text">Clássicos</a>
+            </div>
+            <a class="deeper-header-bonus">Bônus disponíveis</a>
+        </section>
+    </header>
+
+    <section class="desejos-titulo">
+        <div class="desejos-titulo-linha">
+            <img class="desejos-titulo-heart" src="./imagens/coracaored.png">
+            <h1 class="desejos-titulo-texto">Lista de desejos</h1>
+        </div>
+        <p class="desejos-subtitulo">Tudo que você marca como desejo, fica aqui</p>
+    </section>
+
+    <div class="desejos-grid">
+
+        <!-- Card de livro desejado -->
+        <div class="desejo-card">
+            <img class="desejo-capa" src="./imagens/livroalice.png">
+            <div class="desejo-conteudo">
+                <div class="desejo-cabecalho">
+                    <h2 class="desejo-titulo-livro">Alice no País das Maravilhas</h2>
+                    <div class="desejo-desfavoritar">
+                        <img class="heart" src="./imagens/coracaored.png">
+                        <span class="desejo-desfavoritar-texto">Desfavoritar</span>
+                    </div>
+                </div>
+                <div class="desejo-corpo">
+                    <div class="desejo-dados">
+                        <p class="desejo-autor">Lewis Carroll</p>
+                        <p class="desejo-isbn">ISBN: 9781619654280</p>
+                        <p class="desejo-editora">Montecristo Editora</p>
+                    </div>
+                    <div class="desejo-valores">
+                        <div class="desejo-estrelas">
+                            <img class="estrelasimg" src="./imagens/estrela img.png">
+                            <img class="estrelasimg" src="./imagens/estrela img.png">
+                            <img class="estrelasimg" src="./imagens/estrela img.png">
+                            <img class="estrelasimg" src="./imagens/estrela img.png">
+                            <img class="estrelasimg" src="./imagens/estrela img.png">
+                            <span class="avaliados">(4.1)</span>
+                        </div>
+                        <div class="desejo-precoline">
+                            <span class="desejo-precoog">R$ 44,00</span>
+                            <span class="desejo-off">23% OFF</span>
+                        </div>
+                        <h3 class="desejo-precofinal">R$ 36,00</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card de livro desejado -->
+        <div class="desejo-card">
+            <img class="desejo-capa" src="./imagens/livroalice.png">
+            <div class="desejo-conteudo">
+                <div class="desejo-cabecalho">
+                    <h2 class="desejo-titulo-livro">Alice no País das Maravilhas</h2>
+                    <div class="desejo-desfavoritar">
+                        <img class="heart" src="./imagens/coracaored.png">
+                        <span class="desejo-desfavoritar-texto">Desfavoritar</span>
+                    </div>
+                </div>
+                <div class="desejo-corpo">
+                    <div class="desejo-dados">
+                        <p class="desejo-autor">Lewis Carroll</p>
+                        <p class="desejo-isbn">ISBN: 9781619654280</p>
+                        <p class="desejo-editora">Montecristo Editora</p>
+                    </div>
+                    <div class="desejo-valores">
+                        <div class="desejo-estrelas">
+                            <img class="estrelasimg" src="./imagens/estrela img.png">
+                            <img class="estrelasimg" src="./imagens/estrela img.png">
+                            <img class="estrelasimg" src="./imagens/estrela img.png">
+                            <img class="estrelasimg" src="./imagens/estrela img.png">
+                            <img class="estrelasimg" src="./imagens/estrela img.png">
+                            <span class="avaliados">(4.1)</span>
+                        </div>
+                        <div class="desejo-precoline">
+                            <span class="desejo-precoog">R$ 44,00</span>
+                            <span class="desejo-off">23% OFF</span>
+                        </div>
+                        <h3 class="desejo-precofinal">R$ 36,00</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card de livro desejado -->
+        <div class="desejo-card">
+            <img class="desejo-capa" src="./imagens/livroalice.png">
+            <div class="desejo-conteudo">
+                <div class="desejo-cabecalho">
+                    <h2 class="desejo-titulo-livro">Alice no País das Maravilhas</h2>
+                    <div class="desejo-desfavoritar">
+                        <img class="heart" src="./imagens/coracaored.png">
+                        <span class="desejo-desfavoritar-texto">Desfavoritar</span>
+                    </div>
+                </div>
+                <div class="desejo-corpo">
+                    <div class="desejo-dados">
+                        <p class="desejo-autor">Lewis Carroll</p>
+                        <p class="desejo-isbn">ISBN: 9781619654280</p>
+                        <p class="desejo-editora">Montecristo Editora</p>
+                    </div>
+                    <div class="desejo-valores">
+                        <div class="desejo-estrelas">
+                            <img class="estrelasimg" src="./imagens/estrela img.png">
+                            <img class="estrelasimg" src="./imagens/estrela img.png">
+                            <img class="estrelasimg" src="./imagens/estrela img.png">
+                            <img class="estrelasimg" src="./imagens/estrela img.png">
+                            <img class="estrelasimg" src="./imagens/estrela img.png">
+                            <span class="avaliados">(4.1)</span>
+                        </div>
+                        <div class="desejo-precoline">
+                            <span class="desejo-precoog">R$ 44,00</span>
+                            <span class="desejo-off">23% OFF</span>
+                        </div>
+                        <h3 class="desejo-precofinal">R$ 36,00</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card de livro desejado -->
+        <div class="desejo-card">
+            <img class="desejo-capa" src="./imagens/livroalice.png">
+            <div class="desejo-conteudo">
+                <div class="desejo-cabecalho">
+                    <h2 class="desejo-titulo-livro">Alice no País das Maravilhas</h2>
+                    <div class="desejo-desfavoritar">
+                        <img class="heart" src="./imagens/coracaored.png">
+                        <span class="desejo-desfavoritar-texto">Desfavoritar</span>
+                    </div>
+                </div>
+                <div class="desejo-corpo">
+                    <div class="desejo-dados">
+                        <p class="desejo-autor">Lewis Carroll</p>
+                        <p class="desejo-isbn">ISBN: 9781619654280</p>
+                        <p class="desejo-editora">Montecristo Editora</p>
+                    </div>
+                    <div class="desejo-valores">
+                        <div class="desejo-estrelas">
+                            <img class="estrelasimg" src="./imagens/estrela img.png">
+                            <img class="estrelasimg" src="./imagens/estrela img.png">
+                            <img class="estrelasimg" src="./imagens/estrela img.png">
+                            <img class="estrelasimg" src="./imagens/estrela img.png">
+                            <img class="estrelasimg" src="./imagens/estrela img.png">
+                            <span class="avaliados">(4.1)</span>
+                        </div>
+                        <div class="desejo-precoline">
+                            <span class="desejo-precoog">R$ 44,00</span>
+                            <span class="desejo-off">23% OFF</span>
+                        </div>
+                        <h3 class="desejo-precofinal">R$ 36,00</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card de livro desejado -->
+        <div class="desejo-card">
+            <img class="desejo-capa" src="./imagens/livroalice.png">
+            <div class="desejo-conteudo">
+                <div class="desejo-cabecalho">
+                    <h2 class="desejo-titulo-livro">Alice no País das Maravilhas</h2>
+                    <div class="desejo-desfavoritar">
+                        <img class="heart" src="./imagens/coracaored.png">
+                        <span class="desejo-desfavoritar-texto">Desfavoritar</span>
+                    </div>
+                </div>
+                <div class="desejo-corpo">
+                    <div class="desejo-dados">
+                        <p class="desejo-autor">Lewis Carroll</p>
+                        <p class="desejo-isbn">ISBN: 9781619654280</p>
+                        <p class="desejo-editora">Montecristo Editora</p>
+                    </div>
+                    <div class="desejo-valores">
+                        <div class="desejo-estrelas">
+                            <img class="estrelasimg" src="./imagens/estrela img.png">
+                            <img class="estrelasimg" src="./imagens/estrela img.png">
+                            <img class="estrelasimg" src="./imagens/estrela img.png">
+                            <img class="estrelasimg" src="./imagens/estrela img.png">
+                            <img class="estrelasimg" src="./imagens/estrela img.png">
+                            <span class="avaliados">(4.1)</span>
+                        </div>
+                        <div class="desejo-precoline">
+                            <span class="desejo-precoog">R$ 44,00</span>
+                            <span class="desejo-off">23% OFF</span>
+                        </div>
+                        <h3 class="desejo-precofinal">R$ 36,00</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card de livro desejado -->
+        <div class="desejo-card">
+            <img class="desejo-capa" src="./imagens/livroalice.png">
+            <div class="desejo-conteudo">
+                <div class="desejo-cabecalho">
+                    <h2 class="desejo-titulo-livro">Alice no País das Maravilhas</h2>
+                    <div class="desejo-desfavoritar">
+                        <img class="heart" src="./imagens/coracaored.png">
+                        <span class="desejo-desfavoritar-texto">Desfavoritar</span>
+                    </div>
+                </div>
+                <div class="desejo-corpo">
+                    <div class="desejo-dados">
+                        <p class="desejo-autor">Lewis Carroll</p>
+                        <p class="desejo-isbn">ISBN: 9781619654280</p>
+                        <p class="desejo-editora">Montecristo Editora</p>
+                    </div>
+                    <div class="desejo-valores">
+                        <div class="desejo-estrelas">
+                            <img class="estrelasimg" src="./imagens/estrela img.png">
+                            <img class="estrelasimg" src="./imagens/estrela img.png">
+                            <img class="estrelasimg" src="./imagens/estrela img.png">
+                            <img class="estrelasimg" src="./imagens/estrela img.png">
+                            <img class="estrelasimg" src="./imagens/estrela img.png">
+                            <span class="avaliados">(4.1)</span>
+                        </div>
+                        <div class="desejo-precoline">
+                            <span class="desejo-precoog">R$ 44,00</span>
+                            <span class="desejo-off">23% OFF</span>
+                        </div>
+                        <h3 class="desejo-precofinal">R$ 36,00</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card de livro desejado -->
+        <div class="desejo-card">
+            <img class="desejo-capa" src="./imagens/livroalice.png">
+            <div class="desejo-conteudo">
+                <div class="desejo-cabecalho">
+                    <h2 class="desejo-titulo-livro">Alice no País das Maravilhas</h2>
+                    <div class="desejo-desfavoritar">
+                        <img class="heart" src="./imagens/coracaored.png">
+                        <span class="desejo-desfavoritar-texto">Desfavoritar</span>
+                    </div>
+                </div>
+                <div class="desejo-corpo">
+                    <div class="desejo-dados">
+                        <p class="desejo-autor">Lewis Carroll</p>
+                        <p class="desejo-isbn">ISBN: 9781619654280</p>
+                        <p class="desejo-editora">Montecristo Editora</p>
+                    </div>
+                    <div class="desejo-valores">
+                        <div class="desejo-estrelas">
+                            <img class="estrelasimg" src="./imagens/estrela img.png">
+                            <img class="estrelasimg" src="./imagens/estrela img.png">
+                            <img class="estrelasimg" src="./imagens/estrela img.png">
+                            <img class="estrelasimg" src="./imagens/estrela img.png">
+                            <img class="estrelasimg" src="./imagens/estrela img.png">
+                            <span class="avaliados">(4.1)</span>
+                        </div>
+                        <div class="desejo-precoline">
+                            <span class="desejo-precoog">R$ 44,00</span>
+                            <span class="desejo-off">23% OFF</span>
+                        </div>
+                        <h3 class="desejo-precofinal">R$ 36,00</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card "Busque mais livros" -->
+        <div class="desejo-card desejo-card-busca">
+            <img class="desejo-busca-icone" src="./imagens/simbolomais.png">
+            <div class="desejo-busca-textos">
+                <h2 class="desejo-busca-titulo">BUSQUE MAIS LIVROS</h2>
+                <p class="desejo-busca-subtitulo">Favorite mais livros, e eles aparecerão aqui</p>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <section class="footer-space-top"></section>
+        <section class="footer-content">
+            <div class="footer-topics">
+                <h2 class="footer-topics-title">Sobre nós</h2>
+                <div class="footer-topics-list">
+                    <a class="footer-topics-link">Legítimo</a>
+                    <a class="footer-topics-link">Créditos</a>
+                    <a class="footer-topics-link">Informações corporativas</a>
+                    <a class="footer-topics-link">Tecnologias</a>
+                </div>
+            </div>
+            <div class="footer-topics">
+                <h2 class="footer-topics-title">Coopere conosco</h2>
+                <div class="footer-topics-list">
+                    <a class="footer-topics-link">Doe livros usados</a>
+                    <a class="footer-topics-link">Seja um fornecedor</a>
+                    <a class="footer-topics-link">Avalie livros comprados</a>
+                    <a class="footer-topics-link">Doe dinheiro</a>
+                </div>
+            </div>
+            <div class="footer-topics-center">
+                <a class="footer-topics-center-backstart">Voltar ao início</a>
+                <img src="./imagens/iconFooter.png" class="footer-topics-center-icon"/>
+            </div>
+            <div class="footer-topics">
+                <h2 class="footer-topics-title">Pagamento</h2>
+                <div class="footer-topics-list">
+                    <a class="footer-topics-link">Meios de pagamento</a>
+                    <a class="footer-topics-link">Bônus disponíveis</a>
+                    <a class="footer-topics-link">Termos e condições</a>
+                </div>
+            </div>
+            <div class="footer-topics">
+                <h2 class="footer-topics-title">Contato</h2>
+                <div class="footer-topics-list">
+                    <a class="footer-topics-link">Ajuda por telefone</a>
+                    <a class="footer-topics-link">Visite a loja física</a>
+                    <a class="footer-topics-link">Frete e prazo de entrega</a>
+                    <a class="footer-topics-link">Reembolsos</a>
+                </div>
+            </div>
+        </section>
+        <section class="footer-foot">
+            <h2 class="footer-foot-line"> <span class="footer-foot-span">Condições de uso</span> | <span class="footer-foot-span">Cookies</span> | <span class="footer-foot-span">@2026 Legitimolivros.com</span></h2>
+        </section>
+    </footer>
+</body>
+</html>

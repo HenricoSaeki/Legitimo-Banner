@@ -1,0 +1,227 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+h1,h2,h3,h4,h5,h6,p{margin:0;}
+body{
+    background:#FAFAFA;
+}
+
+/* ===== Título da página ===== */
+.desejos-titulo{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:35px 20px 25px;
+    gap:8px;
+}
+.desejos-titulo-linha{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+.desejos-titulo-heart{
+    width:30px;
+    height:auto;
+}
+.desejos-titulo-texto{
+    font-family:'Inter', sans-serif;
+    font-weight:800;
+    font-size:32px;
+    color:#111111;
+}
+.desejos-subtitulo{
+    font-family:'Mada', sans-serif;
+    font-weight:500;
+    font-size:16px;
+    color:#6A6A6A;
+}
+
+/* ===== Grid de cards ===== */
+.desejos-grid{
+    width:100%;
+    max-width:1100px;
+    margin:0 auto;
+    padding:10px 20px 60px;
+    display:grid;
+    grid-template-columns:repeat(2, 1fr);
+    gap:20px;
+}
+
+.desejo-card{
+    background:#fff;
+    display:flex;
+    gap:16px;
+    padding:14px;
+    border-radius:14px;
+    border:2px solid #ECECEC;
+    box-shadow:0 2px 10px rgba(0,0,0,.1);
+    cursor:pointer;
+    transition:0.3s;
+}
+.desejo-card:hover{
+    background-color:#f7f7f7;
+}
+
+.desejo-capa{
+    width:90px;
+    aspect-ratio:152/217;
+    object-fit:cover;
+    border-radius:6px;
+    flex-shrink:0;
+    user-select:none;
+}
+
+.desejo-conteudo{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    gap:8px;
+    width:100%;
+}
+
+.desejo-cabecalho{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    gap:10px;
+}
+
+.desejo-titulo-livro{
+    font-family:'Mada', sans-serif;
+    font-weight:700;
+    font-size:17px;
+    color:#111;
+}
+
+.desejo-desfavoritar{
+    display:flex;
+    align-items:center;
+    gap:5px;
+    flex-shrink:0;
+    cursor:pointer;
+}
+.desejo-desfavoritar .heart{
+    width:15px;
+    height:auto;
+}
+.desejo-desfavoritar-texto{
+    font-family:'Inter', sans-serif;
+    font-weight:700;
+    font-size:13px;
+    color:#C8060A;
+    white-space:nowrap;
+}
+
+.desejo-corpo{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-end;
+    gap:10px;
+    flex-wrap:wrap;
+}
+
+.desejo-dados{
+    display:flex;
+    flex-direction:column;
+    gap:3px;
+}
+.desejo-autor,
+.desejo-isbn,
+.desejo-editora{
+    font-family:'Mada', sans-serif;
+    font-weight:500;
+    font-size:13px;
+    color:#111;
+}
+
+.desejo-valores{
+    display:flex;
+    flex-direction:column;
+    align-items:flex-end;
+    gap:4px;
+}
+
+.desejo-estrelas{
+    display:flex;
+    align-items:center;
+    gap:2px;
+}
+.desejo-estrelas .estrelasimg{
+    height:14px;
+}
+.desejo-estrelas .avaliados{
+    font-family:'Mada', sans-serif;
+    font-size:12.5px;
+    color:#3D3D3D;
+    font-weight:500;
+    margin-left:2px;
+}
+
+.desejo-precoline{
+    display:flex;
+    align-items:center;
+    gap:8px;
+}
+.desejo-precoog{
+    font-family:'Inter', sans-serif;
+    font-weight:400;
+    font-size:14px;
+    color:#6A6A6A;
+    text-decoration:line-through;
+}
+.desejo-off{
+    font-family:'Inter', sans-serif;
+    font-weight:700;
+    font-size:13px;
+    color:#1E6900;
+}
+.desejo-precofinal{
+    font-family:'Inter', sans-serif;
+    font-weight:700;
+    font-size:20px;
+    color:#111;
+}
+
+/* ===== Card "Busque mais livros" ===== */
+.desejo-card-busca{
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+}
+.desejo-busca-icone{
+    width:34px;
+    height:auto;
+}
+.desejo-busca-textos{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+    gap:4px;
+}
+.desejo-busca-titulo{
+    font-family:'Inter', sans-serif;
+    font-weight:800;
+    font-size:20px;
+    color:#111;
+}
+.desejo-busca-subtitulo{
+    font-family:'Inter', sans-serif;
+    font-weight:400;
+    font-size:14px;
+    color:#616161;
+}
+
+/* ===== Responsivo ===== */
+@media (max-width:900px){
+    .desejos-grid{
+        grid-template-columns:1fr;
+    }
+    .desejos-titulo-texto{
+        font-size:24px;
+    }
+}
