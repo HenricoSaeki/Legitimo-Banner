@@ -56,7 +56,9 @@
     height: 100%;
     border: 1px black solid;
     border-radius: 2px;
+    gap: 10px;
     padding: 6px;
+    position: relative;
 }
 .section-descriptions-top-names{
     width: 65%;
@@ -132,4 +134,128 @@
     background-color: black;
     bottom: 0;
     left: 0;
+}
+.section-descriptions-top-prices-title{
+    font-size: 20px;
+    font-weight: 500;
+    color: #383838;
+}
+.section-descriptions-top-prices-original-price{
+    font-size: 24px;
+    color: #6A6A6A;
+    width: 100%;
+    height: 30px;
+    font-weight: 500;
+    text-decoration: line-through;
+}
+.section-descriptions-top-prices-final-price{
+    font-size: 44px;
+    color: black;
+    font-weight: bold;
+}
+.section-descriptions-top-prices-cartCamada{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.section-descriptions-top-prices-addcartretangulo{
+    width: 85%;
+    height: 40px;
+    background-color: #C8060A;
+    display: flex;
+    flex-direction: row;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    transition: 0.4s;
+    cursor: pointer;
+}
+.section-descriptions-top-prices-addcartretangulo:hover{
+    background-color: #A0060A;
+}
+.section-descriptions-top-prices-carrinho{
+    height: 95%;
+    width: auto;
+    object-fit: contain;
+}
+.section-descriptions-top-prices-tag{
+    height: 90%;
+    width: auto;
+    object-fit: contain;
+}
+.section-descriptions-top-prices-addcartretangulo h2{
+    color: white;
+    font-weight: 700;
+    font-size: 22px;
+}
+.section-descriptions-top-prices-dataentrega{
+    font-size: 18px;
+    color: black;
+    font-weight: 500;
+}
+.section-descriptions-top-prices-condicional{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+.section-descriptions-top-prices-condicional-text{
+    color: #C8060A;
+    font-size: 18px;
+    font-weight: 500;
+}
+.section-descriptions-top-prices-condicional-sabermais{
+    color: rgb(19, 123, 123);
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.section-descriptions-top-prices-condicional-sabermais:hover{
+    text-decoration: underline;
+}
+.section-descriptions-top-prices-quantidade{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+}
+.section-descriptions-top-prices-quantidade-text{
+    font-size: 24px;
+    font-weight: 500;
+    color: black;
+}
+.section-descriptions-top-prices-quantidade-block{
+    height: 45px;
+    width: 50px;
+    border: black 1px solid;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    padding: 4px;
+    justify-content: center;
+}
+.section-descriptions-top-prices-quantidade-block-input{
+    border: none;
+    outline: none;
+    width: 90%;
+    height: 100%;
+    font-size: 20px;
+}
+.section-descriptions-top-prices-envio{
+    font-size: 18px;
+    font-weight: 500;
+    color: black;
+}
+.section-descriptions-top-prices-exemplares{
+    font-size: 18px;
+    font-weight: 500;
+    color:#C8060A;
+}
+.section-descriptions-top-prices-tagCamada{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    position: absolute;
+    bottom: 15px;
 }
