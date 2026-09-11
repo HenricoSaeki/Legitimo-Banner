@@ -47,17 +47,23 @@
     display: flex;
     flex-direction: row;
     width: 100%;
+    aspect-ratio: 1092/430;
 }
 .section-descriptions-top-prices{
     display: flex;
     flex-direction: column;
-    width: 25%;
+    width: 30%;
+    height: 100%;
+    border: 1px black solid;
+    border-radius: 2px;
+    padding: 6px;
 }
 .section-descriptions-top-names{
-    width: 70%;
+    width: 65%;
     display: flex;
     flex-direction: column;
     gap: 8px;
+    height: 100%;
     position: relative;
 }
 .section-descriptions-nomeLivro{
@@ -114,8 +120,16 @@
     cursor: pointer;
     position: absolute;
     left: 0;
-    bottom: 0;
+    bottom: 10px;
 }
 .section-descriptions-relato:hover{
     text-decoration: underline;
+}
+.section-descriptions-divisor{
+    position: absolute;
+    height: 1px;
+    width: 95%;
+    background-color: black;
+    bottom: 0;
+    left: 0;
 }
