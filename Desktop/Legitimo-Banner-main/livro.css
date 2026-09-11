@@ -2,4 +2,120 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family: 'Mada', sans-serif;
+}
+.main-book{
+    display: flex;
+    padding: 15px;
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+}
+.cover-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 25%;
+}
+.cover-section-image{
+    width: 90%;
+    aspect-ratio: 253 / 332;
+    height: auto;
+    object-fit: contain;
+    border-radius: 12px;
+}
+.cover-section-more{
+    font-size: 18px;
+    color: #C8060A;
+    font-weight: 500;
+}
+.cover-section-author{
+    font-size: 22px;
+    color: #C8060A;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.section-descriptions{
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.section-descriptions-top{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.section-descriptions-top-prices{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+}
+.section-descriptions-top-names{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    position: relative;
+}
+.section-descriptions-nomeLivro{
+    font-size: 28px;
+    font-weight: 600;
+}
+.section-descriptions-top-names-caracteristicas{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+.section-descriptions-top-names-atribute-1, .section-descriptions-top-names-divisor {
+    font-size: 18px;
+    color: #383838;
+    font-weight: 500;
+}
+.section-descriptions-estrelas-paginalivro{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4px;
+}
+.section-descriptions-estrelasimg-paginalivro{
+    width: 15%;
+    height: auto;
+    object-fit: contain;
+}
+.section-descriptions-avaliados-paginalivro{
+    font-size: 16px;
+    color: #383838;
+    font-weight: 500;
+}
+.section-descriptions-setabaixo-paginalivro{
+    width: 2.8%;
+    height: auto;
+    object-fit: contain;
+    cursor: pointer;
+}
+.section-descriptions-qtd-avaliation{
+    color: #266CA1;
+    font-size: 15px;
+    font-weight: 500;
+}
+.section-descriptions-text{
+    width: 90%;
+    text-align: justify;
+    font-size: 20px;
+    color: black;
+}
+.section-descriptions-relato{
+    color: #C8060A;
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.section-descriptions-relato:hover{
+    text-decoration: underline;
 }
