@@ -22,7 +22,7 @@
     width: 90%;
     aspect-ratio: 253 / 332;
     height: auto;
-    object-fit: contain;
+    object-fit: cover;
     border-radius: 12px;
 }
 .cover-section-more{
@@ -56,7 +56,7 @@
     height: 100%;
     border: 1px black solid;
     border-radius: 2px;
-    gap: 10px;
+    gap: 6px;
     padding: 6px;
     position: relative;
 }
@@ -136,20 +136,20 @@
     left: 0;
 }
 .section-descriptions-top-prices-title{
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 500;
     color: #383838;
 }
 .section-descriptions-top-prices-original-price{
-    font-size: 24px;
+    font-size: 20px;
     color: #6A6A6A;
     width: 100%;
-    height: 30px;
+    height: 22px;
     font-weight: 500;
     text-decoration: line-through;
 }
 .section-descriptions-top-prices-final-price{
-    font-size: 44px;
+    font-size: 36px;
     color: black;
     font-weight: bold;
 }
@@ -187,10 +187,10 @@
 .section-descriptions-top-prices-addcartretangulo h2{
     color: white;
     font-weight: 700;
-    font-size: 22px;
+    font-size: 19px;
 }
 .section-descriptions-top-prices-dataentrega{
-    font-size: 18px;
+    font-size: 14px;
     color: black;
     font-weight: 500;
 }
@@ -202,12 +202,12 @@
 }
 .section-descriptions-top-prices-condicional-text{
     color: #C8060A;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 500;
 }
 .section-descriptions-top-prices-condicional-sabermais{
     color: rgb(19, 123, 123);
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 500;
     cursor: pointer;
 }
@@ -217,17 +217,30 @@
 .section-descriptions-top-prices-quantidade{
     display: flex;
     flex-direction: row;
-    gap: 20px;
+    gap: 16px;
     align-items: center;
 }
+
+
+/*Comando para remover detalhes do input number*/
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
 .section-descriptions-top-prices-quantidade-text{
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 500;
     color: black;
 }
 .section-descriptions-top-prices-quantidade-block{
-    height: 45px;
-    width: 50px;
+    height: 35px;
+    width: 40px;
     border: black 1px solid;
     border-radius: 4px;
     display: flex;
@@ -240,15 +253,16 @@
     outline: none;
     width: 90%;
     height: 100%;
-    font-size: 20px;
+    font-size: 18px;
+    text-align: center;
 }
 .section-descriptions-top-prices-envio{
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 500;
     color: black;
 }
 .section-descriptions-top-prices-exemplares{
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 500;
     color:#C8060A;
 }
@@ -258,4 +272,302 @@
     justify-content: center;
     position: absolute;
     bottom: 15px;
+}
+.section-descriptions-plusinformations{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+.section-descriptions-plusinformations-title{
+    font-size: 20px;
+    font-weight: 500;
+}
+.section-descriptions-plusinformations-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+.section-descriptions-plusinformations-list-part{
+    width: 235px;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.section-descriptions-plusinformations-list-part-image{
+    width: 30%;
+    object-fit: contain;
+}
+.section-descriptions-plusinformations-list-part-texts{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 70%;
+    gap: 2px;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+.section-descriptions-plusinformations-list-part-texts-title{
+    font-size: 16px;
+    font-weight: bold;
+}
+.section-descriptions-plusinformations-list-part-texts-value{
+    font-size: 14px;
+    font-weight: 500;
+}
+.main-avaliations{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 15%;
+    padding-left: 4%;   
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.total-view-section{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7px;
+}
+.list-view-section{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+.total-view-section-stars{
+    width: 75%;
+    aspect-ratio: 5/1;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    justify-content: center;
+    mask:url("./imagens/starmask.png") center/100% 100% no-repeat;
+    -webkit-mask:url("./imagens/starmask.png") center/100% 100% no-repeat;
+}
+
+.yellowbar{
+    position:absolute;
+    top:0;
+    left:0;
+    width:94%;
+    height:100%;
+    background:rgb(255, 221, 0);
+    z-index: 3;
+}
+.barimageStar{
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+}
+.total-view-section-points{
+    font-size: 25px;
+    font-weight: 600;
+    color: black;
+}
+.total-view-section-avaliacoes-feitas{
+    font-size: 16px;
+    color: #585858;
+    font-weight: 500;
+}
+.total-view-section-avaliacoes-por-star{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    height: auto;
+}
+.total-view-section-avaliacoes-por-star-block{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+}
+.total-view-section-avaliacoes-por-star-title{
+    font-size: 14px;
+    font-weight: 500;
+    color: #C8060A
+}
+.total-view-section-avaliacoes-por-star-barra{
+    width: 55%;
+    height: 100%;
+    border: 1px solid;
+    border-radius: 3px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.total-view-section-avaliacoes-por-star-barra-preencher{
+    width: 0%;
+    height: 100%;
+    background-color: rgb(255, 221, 0);
+}
+#five{
+    width: 52%;
+}
+#four{
+    width: 12%;
+}
+#three{
+    width: 17%;
+}
+#two{
+    width: 8%;
+}
+#one{
+    width: 11%;
+}
+.total-view-section-avaliacoes-por-star-porcentagem{
+    width: 10%;
+    font-size: 14px;
+    font-weight: 500;
+    color: #C8060A;
+    text-align: center;
+}
+.total-view-section-como{
+    font-size: 16px;
+    font-weight: 500;
+    color: black;
+}
+.total-view-section-saibamais{
+    font-size: 14px;
+    color: #4C4C4C;
+    cursor: pointer;
+}
+.total-view-section-saibamais:hover{
+    text-decoration: underline;
+}
+.total-view-section-divisor{
+    width: 100%;
+    background-color: black;
+    height: 1px;
+}
+.total-view-section-avalieText{
+    font-size: 25px;
+    font-weight: bold;
+    color: black;
+}
+.total-view-section-compartilhar{
+    width: 70%;
+    text-align: center;
+    color: #4C4C4C;
+    font-weight: 500;
+    font-size: 14px;
+}
+.total-view-section-avaliar{
+    color: #C8060A;
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+}
+.total-view-section-avaliar:hover{
+    text-decoration: underline;
+}
+
+.list-view-section-title{
+    font-size: 26px;
+    font-weight: bold;
+    color: black;
+}
+.list-view-section-index{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    width: 100%;
+    height: auto;
+}
+.list-view-section-index-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 10px;
+    height: auto;
+    align-items: center;
+}
+.list-view-section-index-header-icon{
+    height: 50px;
+    object-fit: contain;
+}
+.list-view-section-index-header-name{
+    height: 30px;
+    font-size: 22px;
+    color: black;
+    font-weight: bold;
+}
+.list-view-section-index-avaliacao-sobre{
+    display: flex;
+    width: 100%;
+    height: 30px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+}
+.list-view-section-index-avaliacao-sobre-text{
+    font-size: 16px;
+    color: #3E3E3E;
+    font-weight: 500;
+    width: 40%;
+}
+.list-view-section-index-avaliacao-sobre-section-stars{
+    height: 95%;
+    aspect-ratio: 5/1;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    justify-content: center;
+    mask:url("./imagens/starmask.png") center/100% 100% no-repeat;
+    -webkit-mask:url("./imagens/starmask.png") center/100% 100% no-repeat;
+}
+.yellowbar-comment{
+    position:absolute;
+    top:0;
+    left:0;
+    width:80%;
+    height:100%;
+    background:rgb(255, 221, 0);
+    z-index: 3;
+}
+.barimageStar-comment{
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+}
+.list-view-section-index-date{
+    font-size: 14px;
+    color: #3E3E3E;
+    font-weight: 500;
+}
+.list-view-section-index-compraVerificada{
+    font-size: 14px;
+    color:#266CA1;
+    font-weight: 500;
+}
+.list-view-section-index-textabout{
+    width: 100%;
+    font-size: 16px;
+    text-align: justify;
+}
+.list-view-section-index-divisor{
+    width: 100%;
+    background-color: black;
+    height: 1px;
+}
+.list-view-section-vermais{
+    color:#266CA1;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.list-view-section-vermais:hover{
+    text-decoration: underline;
 }

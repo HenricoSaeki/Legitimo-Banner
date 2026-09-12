@@ -515,6 +515,7 @@ h1,h2,h3,h4,h5,h6,p{margin:0;}
     justify-content: center;
     padding-bottom: 20px;
     padding-top: 20px;
+    overflow: hidden;
 }
 .div-cards-carousel-static{
     width: 100%;
