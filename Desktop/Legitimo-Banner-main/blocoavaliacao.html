@@ -4,33 +4,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bloco da avaliacao</title>
+    <link rel="stylesheet" href="blocoavaliacao.css">
 </head>
 <body>
     <div class="background-avaliacao">
 
     </div>
+    <div class="supercard">
     <div class="supercard-avaliacao">
-        <h1 class="supercard-avaliacao-title">AVALIE ESTE LIVRO</h1>
+        <h1 class="supercard-avaliacao-title"><span>AVALIE</span> ESTE LIVRO</h1>
         <div class="supercard-avaliacao-topdetails">
             <div class="supercard-avaliacao-topdetails-info">
                 <h2 class="supercard-avaliacao-topdetails-info-nome">Harry Potter e o Enigma do Príncipe</h2>
                 <h2 class="supercard-avaliacao-topdetails-info-editora">Editora: Rocco</h2>
-                <h2 class="supercard-avaliacao-topdetails-info-tipo">Capa mole</h2>
-                <h2 class="supercard-avaliacao-topdetails-info-isbn">8532519474</h2>
+                <h2 class="supercard-avaliacao-topdetails-info-tipo">Tipo: Capa mole</h2>
+                <h2 class="supercard-avaliacao-topdetails-info-isbn">ISBN: 8532519474</h2>
             </div>
             <div class="supercard-avaliacao-topdetails-avaliacao">
                 <h3 class="supercard-avaliacao-topdetails-avaliacao-media">Média geral</h3>
                 <div class="supercard-avaliacao-topdetails-avaliacao-stars">
-                    <img src="" class="supercard-avaliacao-topdetails-avaliacao-stars-image"/>
-                    <img src="" class="supercard-avaliacao-topdetails-avaliacao-stars-image"/>
-                    <img src="" class="supercard-avaliacao-topdetails-avaliacao-stars-image"/>
-                    <img src="" class="supercard-avaliacao-topdetails-avaliacao-stars-image"/>
-                    <img src="" class="supercard-avaliacao-topdetails-avaliacao-stars-image"/>
+                    <div class="supercard-avaliacao-topdetails-avaliacao-stars-yellowbar"></div>
+                    <img class="supercard-avaliacao-topdetails-avaliacao-stars-barimageStar" src="./imagens/StarComb.png">
                 </div>
                 <h2 class="supercard-avaliacao-topdetails-avaliacao-limites"><span>4,8</span> de <span>5</span></h2>
                 <h3 class="supercard-avaliacao-topdetails-avaliacao-quantidade">267 avaliações feitas</h3>
             </div>
         </div>
+        <div class="supercard-avaliacao-midInformation">
+            <div class="supercard-avaliacao-midInformation-input-title">
+                <div class="supercard-avaliacao-midInformation-input-descriptions">
+                    <label class="supercard-avaliacao-midInformation-input-descriptions-text">Título da Avaliação</label>
+                    <span class="supercard-avaliacao-midInformation-input-descriptions-span">*</span>
+                </div>
+                <div class="supercard-avaliacao-midInformation-input-block">
+                    <input type="text" class="supercard-avaliacao-midInformation-input-block-itself" placeholder="Ex: Muito bom, simplesmente sensacional"/>
+                </div>
+            </div>
+            <div class="supercard-avaliacao-midInformation-input-nota">
+                <div class="supercard-avaliacao-midInformation-input-descriptions">
+                    <label class="supercard-avaliacao-midInformation-input-descriptions-text">Nota do Livro</label>
+                    <span class="supercard-avaliacao-midInformation-input-descriptions-span">*</span>
+                </div>
+                <div class="supercard-avaliacao-midInformation-input-block">
+                    <select name="estrelas..." class="supercard-avaliacao-midInformation-input-block-itself" placeholder="Ex: Muito bom, simplesmente sensacional">
+                        <option value="1" class="supercard-avaliacao-midInformation-Input-block-option">1 estrela</option>
+                        <option value="2" class="supercard-avaliacao-midInformation-Input-block-option">2 estrelas</option>
+                        <option value="3" class="supercard-avaliacao-midInformation-Input-block-option">3 estrelas</option>
+                        <option value="4" class="supercard-avaliacao-midInformation-Input-block-option">4 estrelas</option>
+                        <option value="5" class="supercard-avaliacao-midInformation-Input-block-option">5 estrelas</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="supercard-avaliacao-midTextArea">
+        <div class="supercard-avaliacao-midInformation-input-textarea">
+                <div class="supercard-avaliacao-midInformation-input-descriptions">
+                    <label class="supercard-avaliacao-midInformation-input-descriptions-text">Conteúdo da avaliação</label>
+                    <span class="supercard-avaliacao-midInformation-input-descriptions-span">*</span>
+                </div>
+                <div class="supercard-avaliacao-midInformation-input-block">
+                    <textarea class="supercard-avaliacao-midInformation-input-block-itself" rows="7" cols="50" placeholder="Escreva sobre a qualidade do produto e o que achou do livro..."></textarea>
+                </div>
+            </div>
+        <div class="supercard-avaliacao-bottomInformation">
+        </div>
+        </div>
+        <div class="supercard-avaliacao-bottomButton">
+            <a class="supercard-avaliacao-bottomButton-back">
+                <img src="./imagens/icon_backAvaliation.png" class="supercard-avaliacao-bottomButton-back-symbol"/>
+                <h3 class="supercard-avaliacao-bottomButton-back-title">Voltar</h3>
+            </a>
+            <button class="supercard-avaliacao-bottomButton-button">
+                <img src="./imagens/icon_avaliation.png" class="supercard-avaliacao-bottomButton-button-icon"/>
+                <h3 class="supercard-avaliacao-bottomButton-button-title">Avaliar</h3>
+            </button>
+        </div>
+    </div>
     </div>
 </body>
 </html>
