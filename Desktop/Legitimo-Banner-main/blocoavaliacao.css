@@ -205,3 +205,63 @@ body{
     font-weight: 500;
     color: #ABABAB;
 }
+.supercard-avaliacao-bottomButton{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    padding: 4px;
+    height: 10%;
+    width: 100%;
+}
+.supercard-avaliacao-bottomButton-back{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    left: 5%;
+    bottom: 0;
+    height: 100%;
+    gap: 3px;
+    cursor: pointer;
+}
+.supercard-avaliacao-bottomButton-back-symbol{
+    object-fit: contain;
+    width: auto;
+    height: 100%;
+}
+.supercard-avaliacao-bottomButton-back-title{
+    font-size: 22px;
+    color: #C8060A;
+    font-weight: 500;
+}
+.supercard-avaliacao-bottomButton-button{
+    border: none;
+    outline: none;
+    background-color:#C8060A;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5px;
+    height: 100%;
+    border-radius: 15px;
+    width: 40%;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.supercard-avaliacao-bottomButton-button:hover{
+    background-color: #A0060A;
+}
+.supercard-avaliacao-bottomButton-button-icon{
+    height: 75%;
+    width: auto;
+    object-fit: contain;
+}
+.supercard-avaliacao-bottomButton-button-title{
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+}
+
