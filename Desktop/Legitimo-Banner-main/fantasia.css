@@ -211,8 +211,30 @@ h1,h2,h3,h4,h5,h6,p{margin:0;}
     margin-top:2px;
     cursor:pointer;
 }
+.estrelas-specifics{
+    width: 40%;
+    aspect-ratio: 5/1;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    justify-content: center;
+    mask: url("./imagens/starmask.png") center/100% 100% no-repeat;
+    -webkit-mask: url("./imagens/starmask.png") center/100% 100% no-repeat;
+}
 .estrelasimg{
-    height: 15.5px;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    z-index: 4;
+}
+.estrelas-specifics-yellowbar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 94%;
+    height: 100%;
+    background: rgb(255, 221, 0);
+    z-index: 3;
 }
 .avaliados{
     font-size:12.5px;color:#3D3D3D;font-weight:500;
@@ -1012,10 +1034,30 @@ h1,h2,h3,h4,h5,h6,p{margin:0;}
     flex-wrap: wrap;
 }
 
-.estrelasimg-historico {
-    height: 1rem;
-    width: auto;
-    user-select: none;
+.estrelas-historico-specifics{
+    width: 30%;
+    aspect-ratio: 5/1;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    justify-content: center;
+    mask: url("./imagens/starmask.png") center/100% 100% no-repeat;
+    -webkit-mask: url("./imagens/starmask.png") center/100% 100% no-repeat;
+}
+.estrelasimg-historico{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    z-index: 4;
+}
+.estrelas-specifics-yellowbar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 94%;
+    height: 100%;
+    background: rgb(255, 221, 0);
+    z-index: 3;
 }
 
 .avaliados-historico {
