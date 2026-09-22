@@ -1,0 +1,29 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #FAFAFA;
+
+}
+.div-mainList{
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+}
+.div-mainList-section-filtros{
+    display: flex;
+    width: 18%;
+    flex-direction: column;
+    justify-content: left;
+    padding: 15px;
+    border-radius: 12px;
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0,0,0,.1);
+}
