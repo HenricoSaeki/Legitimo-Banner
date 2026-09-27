@@ -5,8 +5,82 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./lista.css">
+    <link rel="stylesheet" href="./fantasia.css">
+    <link rel="stylesheet" href="./styleHeader.css">
+    <link rel="stylesheet" href="./indexFooter.css">
+    <link rel="stylesheet" href="./lateralBar.css">
+    <link rel="stylesheet" href="./indexFooter.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
+     <div class="lateral-bar">
+        <section class="lateral-bar-header">
+            <div class="lateral-bar-userDiv">
+                <img src="./imagens/cliente_iconbar.png" class="lateral-bar-userDiv-image"/>
+                <h2 class="lateral-bar-userDiv-name">Usuário não conectado</h2>
+            </div>
+            <img src="./imagens/leave_iconbar.png" class="lateral-bar-userDiv-leave"/>
+        </section>
+        <section class="lateral-bar-content">
+            <div class="lateral-bar-content-block">
+                <h2 class="lateral-bar-content-block-title">Destaques</h2>
+                <li class="lateral-bar-content-block-list">
+                    <a class="lateral-bar-content-block-list-item">Mais vendidos</a>
+                    <a class="lateral-bar-content-block-list-item">Ofertas do mês</a>
+                    <a class="lateral-bar-content-block-list-item">Bem avaliados</a>
+                </li>
+            </div>
+            <div class="lateral-bar-content-block">
+                <h2 class="lateral-bar-content-block-title">Para você</h2>
+                <li class="lateral-bar-content-block-list">
+                    <a class="lateral-bar-content-block-list-item">Talvez você goste</a>
+                    <a class="lateral-bar-content-block-list-item">Minhas compras</a>
+                    <a class="lateral-bar-content-block-list-item">Meus cupons</a>
+                    <a class="lateral-bar-content-block-list-item">Avaliações disponíveis</a>
+                    <a class="lateral-bar-content-block-list-item">Favoritos</a>
+                </li>
+            </div>
+            <div class="lateral-bar-content-block">
+                <h2 class="lateral-bar-content-block-title">Escolha do seu jeito</h2>
+                <li class="lateral-bar-content-block-list">
+                    <a class="lateral-bar-content-block-list-item">Gêneros</a>
+                    <a class="lateral-bar-content-block-list-item">Procurar livros</a>
+                    <a class="lateral-bar-content-block-list-item">Autores</a>
+                    <a class="lateral-bar-content-block-list-item">Histórico de navegação</a>
+                </li>
+            </div>
+        </section>
+    </div>
+   <header>
+        <section class="uper-header">
+            <img src="./imagens/logoLivraria.png" class="logo-header">
+            <div class="search-bar-header">
+                <a class="icon-search-bar-font"><img src="./imagens/SearchbarIcon.png" class="icon-search-bar"></a>
+                <input type="text" class="input-search-bar" placeholder="Digite livros, autores ou editoras"/>
+            </div>
+            <a class="carrinho-header">
+                <h2 class="tittle-carrinho-header">Carrinho de compras</h2>
+                <div class="icon-carrinho-header">
+                    <img src="./imagens/CartIcon.png" class="image-icon-carrinho-header">
+                    <h3 class="number-carrinho-header">1</h3>
+                </div>
+            </a>
+            <div class="entry-header">
+                <a class="tittle-login-header">Olá Sr. Anônimo</a>
+            </div>
+        </section>
+        <section class="deeper-header">
+            <a class="font-deeper-header-menu"><img src="./imagens/menuIcon.png" class="deeper-header-menu-icon"></a>
+            <div class="main-items-deeper">
+                <a class="main-items-deeper-text">Ofertas</a>
+                <a class="main-items-deeper-text">Destaques</a>
+                <a class="main-items-deeper-text">Lançamentos</a>
+                <a class="main-items-deeper-text">Contato</a>
+                <a class="main-items-deeper-text">Clássicos</a>
+            </div>
+            <a class="deeper-header-bonus">Bônus disponíveis</a>
+        </section>
+    </header>
     <div class="div-mainList">
         <section class="div-mainList-section-filtros">
             <h3 class="div-mainList-section-filtros-title">Filtros</h3>
@@ -14,87 +88,88 @@
                 <h3 class="div-mainList-section-filtros-generos-title">Gêneros</h3>
                 <div class="div-mainList-section-filtros-generos-block">
                     <input type="checkbox" class="div-mainList-section-filtros-generos-block-square"/>
-                    <h4 class="div-mainList-section-filtros-generos-block-square">Fantasia</h4>
+                    <h4 class="div-mainList-section-filtros-generos-block-square-title">Fantasia</h4>
                 </div>
                 <div class="div-mainList-section-filtros-generos-block">
                     <input type="checkbox" class="div-mainList-section-filtros-generos-block-square"/>
-                    <h4 class="div-mainList-section-filtros-generos-block-square">Aventura</h4>
+                    <h4 class="div-mainList-section-filtros-generos-block-square-title">Aventura</h4>
                 </div>
                 <div class="div-mainList-section-filtros-generos-block">
                     <input type="checkbox" class="div-mainList-section-filtros-generos-block-square"/>
-                    <h4 class="div-mainList-section-filtros-generos-block-square">Ficção Científica</h4>
+                    <h4 class="div-mainList-section-filtros-generos-block-square-title">Ficção Científica</h4>
                 </div>
                 <div class="div-mainList-section-filtros-generos-block">
                     <input type="checkbox" class="div-mainList-section-filtros-generos-block-square"/>
-                    <h4 class="div-mainList-section-filtros-generos-block-square">História</h4>
+                    <h4 class="div-mainList-section-filtros-generos-block-square-title">História</h4>
                 </div>
                 <div class="div-mainList-section-filtros-generos-block">
                     <input type="checkbox" class="div-mainList-section-filtros-generos-block-square"/>
-                    <h4 class="div-mainList-section-filtros-generos-block-square">Romance</h4>
+                    <h4 class="div-mainList-section-filtros-generos-block-square-title">Romance</h4>
                 </div>
                 <div class="div-mainList-section-filtros-generos-block">
                     <input type="checkbox" class="div-mainList-section-filtros-generos-block-square"/>
-                    <h4 class="div-mainList-section-filtros-generos-block-square">Biografia</h4>
+                    <h4 class="div-mainList-section-filtros-generos-block-square-title">Biografia</h4>
                 </div>
                 <div class="div-mainList-section-filtros-generos-block">
                     <input type="checkbox" class="div-mainList-section-filtros-generos-block-square"/>
-                    <h4 class="div-mainList-section-filtros-generos-block-square">Autoajuda</h4>
+                    <h4 class="div-mainList-section-filtros-generos-block-square-title">Autoajuda</h4>
                 </div>
                 <div class="div-mainList-section-filtros-generos-block">
                     <input type="checkbox" class="div-mainList-section-filtros-generos-block-square"/>
-                    <h4 class="div-mainList-section-filtros-generos-block-square">Terror</h4>
+                    <h4 class="div-mainList-section-filtros-generos-block-square-title">Terror</h4>
                 </div>
                 <div class="div-mainList-section-filtros-generos-block">
                     <input type="checkbox" class="div-mainList-section-filtros-generos-block-square"/>
-                    <h4 class="div-mainList-section-filtros-generos-block-square">Mistério</h4>
+                    <h4 class="div-mainList-section-filtros-generos-block-square-title">Mistério</h4>
                 </div>
                 <div class="div-mainList-section-filtros-generos-block">
                     <input type="checkbox" class="div-mainList-section-filtros-generos-block-square"/>
-                    <h4 class="div-mainList-section-filtros-generos-block-square">Filosofia</h4>
+                    <h4 class="div-mainList-section-filtros-generos-block-square-title">Filosofia</h4>
                 </div>
                 <div class="div-mainList-section-filtros-generos-block">
                     <input type="checkbox" class="div-mainList-section-filtros-generos-block-square"/>
-                    <h4 class="div-mainList-section-filtros-generos-block-square">Humor</h4>
+                    <h4 class="div-mainList-section-filtros-generos-block-square-title">Humor</h4>
                 </div>
                 <div class="div-mainList-section-filtros-generos-block">
                     <input type="checkbox" class="div-mainList-section-filtros-generos-block-square"/>
-                    <h4 class="div-mainList-section-filtros-generos-block-square">Drama</h4>
+                    <h4 class="div-mainList-section-filtros-generos-block-square-title">Drama</h4>
                 </div>
                 <div class="div-mainList-section-filtros-generos-block">
                     <input type="checkbox" class="div-mainList-section-filtros-generos-block-square"/>
-                    <h4 class="div-mainList-section-filtros-generos-block-square">Suspense</h4>
+                    <h4 class="div-mainList-section-filtros-generos-block-square-title">Suspense</h4>
                 </div>
                 <div class="div-mainList-section-filtros-generos-block">
                     <input type="checkbox" class="div-mainList-section-filtros-generos-block-square"/>
-                    <h4 class="div-mainList-section-filtros-generos-block-square">Religião</h4>
+                    <h4 class="div-mainList-section-filtros-generos-block-square-title">Religião</h4>
                 </div>
                 <div class="div-mainList-section-filtros-generos-block">
                     <input type="checkbox" class="div-mainList-section-filtros-generos-block-square"/>
-                    <h4 class="div-mainList-section-filtros-generos-block-square">Literatura Clássica</h4>
+                    <h4 class="div-mainList-section-filtros-generos-block-square-title">Literatura Clássica</h4>
                 </div>
                 <div class="div-mainList-section-filtros-generos-block">
                     <input type="checkbox" class="div-mainList-section-filtros-generos-block-square"/>
-                    <h4 class="div-mainList-section-filtros-generos-block-square">Literatura Infantil</h4>
+                    <h4 class="div-mainList-section-filtros-generos-block-square-title">Literatura Infantil</h4>
                 </div>
                 <div class="div-mainList-section-filtros-generos-block">
                     <input type="checkbox" class="div-mainList-section-filtros-generos-block-square"/>
-                    <h4 class="div-mainList-section-filtros-generos-block-square">Literatura Juvenil</h4>
+                    <h4 class="div-mainList-section-filtros-generos-block-square-title">Literatura Juvenil</h4>
                 </div>
                 <div class="div-mainList-section-filtros-generos-block">
                     <input type="checkbox" class="div-mainList-section-filtros-generos-block-square"/>
-                    <h4 class="div-mainList-section-filtros-generos-block-square">Contos</h4>
+                    <h4 class="div-mainList-section-filtros-generos-block-square-title">Contos</h4>
                 </div>
                 <div class="div-mainList-section-filtros-generos-block">
                     <input type="checkbox" class="div-mainList-section-filtros-generos-block-square"/>
-                    <h4 class="div-mainList-section-filtros-generos-block-square">Poesia</h4>
+                    <h4 class="div-mainList-section-filtros-generos-block-square-title">Poesia</h4>
                 </div>
                 <div class="div-mainList-section-filtros-generos-block">
                     <input type="checkbox" class="div-mainList-section-filtros-generos-block-square"/>
-                    <h4 class="div-mainList-section-filtros-generos-block-square">Mangás</h4>
+                    <h4 class="div-mainList-section-filtros-generos-block-square-title">Mangás</h4>
                 </div>
             </div>
             <div class="div-mainList-section-filtros-faixapreco">
                 <h3 class="div-mainList-section-filtros-faixapreco-title">Faixa de Preço</h3>
+                <div class="parte-de-ate">
                 <div class="div-mainList-section-filtros-faixapreco-de">
                     <h4 class="div-mainList-section-filtros-faixapreco-de-text">De:</h4>
                     <input type="number" class="div-mainList-section-filtros-faixapreco-de-input"/>
@@ -103,28 +178,1285 @@
                     <h4 class="div-mainList-section-filtros-faixapreco-de-text">Até:</h4>
                     <input type="number" class="div-mainList-section-filtros-faixapreco-de-input"/>
                 </div>
+                </div>
             </div>
             <div class="div-mainList-section-filtros-avaliacao-selector">
                 <h3 class="div-mainList-section-filtros-avaliacao-selector-title">Avaliação</h3>
+                <div class="parte-de-ate-avaliacao">
                 <div class="div-mainList-section-filtros-avaliacao-selector-de">
                     <h4 class="div-mainList-section-filtros-avaliacao-selector-de-text">De:</h4>
                     <input type="number" class="div-mainList-section-filtros-avaliacao-selector-de-input"/>
                 </div>
                 <div class="div-mainList-section-filtros-avaliacao-selector-starList">
-                    <img src="" class="div-mainList-section-filtros-avaliacao-selector-starList-star"/>
-                    <img src="" class="div-mainList-section-filtros-avaliacao-selector-starList-star"/>
-                    <img src="" class="div-mainList-section-filtros-avaliacao-selector-starList-star"/>
-                    <img src="" class="div-mainList-section-filtros-avaliacao-selector-starList-star"/>
-                    <img src="" class="div-mainList-section-filtros-avaliacao-selector-starList-star"/>
+                    <img src="./imagens/StarComb.png" class="div-mainList-section-filtros-avaliacao-selector-starList-starborder" />
+                    <div class="div-mainList-section-filtros-avaliacao-selector-starList-yellow"></div>
+                </div>
+                </div>
+                <div class="parte-de-ate-avaliacao">
+                <div class="div-mainList-section-filtros-avaliacao-selector-de">
+                    <h4 class="div-mainList-section-filtros-avaliacao-selector-de-text">Até:</h4>
+                    <input type="number" class="div-mainList-section-filtros-avaliacao-selector-de-input"/>
+                </div>
+                <div class="div-mainList-section-filtros-avaliacao-selector-starList">
+                    <img src="./imagens/StarComb.png" class="div-mainList-section-filtros-avaliacao-selector-starList-starborder" />
+                    <div class="div-mainList-section-filtros-avaliacao-selector-starList-yellow"></div>
+                </div>
                 </div>
             </div>
             <div class="div-mainList-section-filtros-tipoLivro">
-
+                <h3 class="div-mainList-section-filtros-generos-title">Tipo de livro</h3>
+                <div class="div-mainList-section-filtros-generos-block">
+                    <input type="checkbox" class="div-mainList-section-filtros-generos-block-square"/>
+                    <h4 class="div-mainList-section-filtros-generos-block-square-title">Capa mole</h4>
+                </div>
+                <div class="div-mainList-section-filtros-generos-block">
+                    <input type="checkbox" class="div-mainList-section-filtros-generos-block-square"/>
+                    <h4 class="div-mainList-section-filtros-generos-block-square-title">Capa dura</h4>
+                </div>
+                <div class="div-mainList-section-filtros-generos-block">
+                    <input type="checkbox" class="div-mainList-section-filtros-generos-block-square"/>
+                    <h4 class="div-mainList-section-filtros-generos-block-square-title">Ebook</h4>
+                </div>
             </div>
         </section>
         <section class="div-mainList-section-lista">
+            <div class="card1-2">
+       <div class="containerlivro">
+          <img class="book" src="imagens/book7.webp">
 
+          <div class="retangulocima">
+             <img class="imgetiqueta" src="imagens/iconefogo.png">
+             <p class="alta">EM ALTA</p>
+          </div>
+      </div>
+
+
+        <div class="partebaixo">
+          <div class="tituloeheart">
+             <h2 class="titulolivro">O Morro dos Ventos Uivantes</h2>
+             <div class="heartfundo">
+                <img class="heart" src="imagens/coracaored.png">
+             </div>
+        </div>
+
+        <p class="autor">Por Emily Brontë</p>
+        <p class="editor">Camelot Editora</p>
+        <div class="estrelas">
+           <div class="estrelas-specifics">
+              <img class="estrelasimg" src="imagens/StarComb.png">
+              <div class="estrelas-specifics-yellowbar"></div>
+           </div>
+           <h3 class="avaliados">(4.3)</h3>
+           <img class="setabaixo" src="imagens/setabaixo.png">
+        </div>
+        <h3 class="precoog"></h3>
+        <div class="precoDiv">
+           <h2 class="preco">R$ 21,90</h2>
+           <h2 class="off"></h2>
+        </div>
+        </div>
+        <div class="cartCamada">
+           <div class="addcartretangulo">
+              <img class="carrinho" src="imagens/cart.png">
+              <h2>Adicionar ao carrinho</h2>
+           </div>
+       </div>
+    </div>
+    <div class="card1-2">
+       <div class="containerlivro">
+          <img class="book" src="imagens/book8.webp">
+
+          <div class="retangulocima">
+             <img class="imgetiqueta" src="imagens/iconefogo.png">
+             <p class="alta">EM ALTA</p>
+          </div>
+      </div>
+
+
+        <div class="partebaixo">
+          <div class="tituloeheart">
+             <h2 class="titulolivro">O Morro dos Ventos Uivantes</h2>
+             <div class="heartfundo">
+                <img class="heart" src="imagens/coracaored.png">
+             </div>
+        </div>
+
+        <p class="autor">Por Emily Brontë</p>
+        <p class="editor">Camelot Editora</p>
+        <div class="estrelas">
+           <div class="estrelas-specifics">
+              <img class="estrelasimg" src="imagens/StarComb.png">
+              <div class="estrelas-specifics-yellowbar"></div>
+           </div>
+           <h3 class="avaliados">(4.3)</h3>
+           <img class="setabaixo" src="imagens/setabaixo.png">
+        </div>
+        <h3 class="precoog"></h3>
+        <div class="precoDiv">
+           <h2 class="preco">R$ 21,90</h2>
+           <h2 class="off"></h2>
+        </div>
+        </div>
+        <div class="cartCamada">
+           <div class="addcartretangulo">
+              <img class="carrinho" src="imagens/cart.png">
+              <h2>Adicionar ao carrinho</h2>
+           </div>
+       </div>
+    </div>
+    <div class="card1-2">
+       <div class="containerlivro">
+          <img class="book" src="imagens/book9.webp">
+
+          <div class="retangulocima">
+             <img class="imgetiqueta" src="imagens/iconefogo.png">
+             <p class="alta">EM ALTA</p>
+          </div>
+      </div>
+
+
+        <div class="partebaixo">
+          <div class="tituloeheart">
+             <h2 class="titulolivro">O Morro dos Ventos Uivantes</h2>
+             <div class="heartfundo">
+                <img class="heart" src="imagens/coracaored.png">
+             </div>
+        </div>
+
+        <p class="autor">Por Emily Brontë</p>
+        <p class="editor">Camelot Editora</p>
+        <div class="estrelas">
+           <div class="estrelas-specifics">
+              <img class="estrelasimg" src="imagens/StarComb.png">
+              <div class="estrelas-specifics-yellowbar"></div>
+           </div>
+           <h3 class="avaliados">(4.3)</h3>
+           <img class="setabaixo" src="imagens/setabaixo.png">
+        </div>
+        <h3 class="precoog"></h3>
+        <div class="precoDiv">
+           <h2 class="preco">R$ 21,90</h2>
+           <h2 class="off"></h2>
+        </div>
+        </div>
+        <div class="cartCamada">
+           <div class="addcartretangulo">
+              <img class="carrinho" src="imagens/cart.png">
+              <h2>Adicionar ao carrinho</h2>
+           </div>
+       </div>
+    </div>
+    <div class="card1-2">
+       <div class="containerlivro">
+          <img class="book" src="imagens/book10.webp">
+
+          <div class="retangulocima">
+             <img class="imgetiqueta" src="imagens/iconefogo.png">
+             <p class="alta">EM ALTA</p>
+          </div>
+      </div>
+
+
+        <div class="partebaixo">
+          <div class="tituloeheart">
+             <h2 class="titulolivro">O Morro dos Ventos Uivantes</h2>
+             <div class="heartfundo">
+                <img class="heart" src="imagens/coracaored.png">
+             </div>
+        </div>
+
+        <p class="autor">Por Emily Brontë</p>
+        <p class="editor">Camelot Editora</p>
+        <div class="estrelas">
+           <div class="estrelas-specifics">
+              <img class="estrelasimg" src="imagens/StarComb.png">
+              <div class="estrelas-specifics-yellowbar"></div>
+           </div>
+           <h3 class="avaliados">(4.3)</h3>
+           <img class="setabaixo" src="imagens/setabaixo.png">
+        </div>
+        <h3 class="precoog"></h3>
+        <div class="precoDiv">
+           <h2 class="preco">R$ 21,90</h2>
+           <h2 class="off"></h2>
+        </div>
+        </div>
+        <div class="cartCamada">
+           <div class="addcartretangulo">
+              <img class="carrinho" src="imagens/cart.png">
+              <h2>Adicionar ao carrinho</h2>
+           </div>
+       </div>
+    </div>
+    <div class="card1-2">
+       <div class="containerlivro">
+          <img class="book" src="imagens/book7.webp">
+
+          <div class="retangulocima">
+             <img class="imgetiqueta" src="imagens/iconefogo.png">
+             <p class="alta">EM ALTA</p>
+          </div>
+      </div>
+
+
+        <div class="partebaixo">
+          <div class="tituloeheart">
+             <h2 class="titulolivro">O Morro dos Ventos Uivantes</h2>
+             <div class="heartfundo">
+                <img class="heart" src="imagens/coracaored.png">
+             </div>
+        </div>
+
+        <p class="autor">Por Emily Brontë</p>
+        <p class="editor">Camelot Editora</p>
+        <div class="estrelas">
+           <div class="estrelas-specifics">
+              <img class="estrelasimg" src="imagens/StarComb.png">
+              <div class="estrelas-specifics-yellowbar"></div>
+           </div>
+           <h3 class="avaliados">(4.3)</h3>
+           <img class="setabaixo" src="imagens/setabaixo.png">
+        </div>
+        <h3 class="precoog"></h3>
+        <div class="precoDiv">
+           <h2 class="preco">R$ 21,90</h2>
+           <h2 class="off"></h2>
+        </div>
+        </div>
+        <div class="cartCamada">
+           <div class="addcartretangulo">
+              <img class="carrinho" src="imagens/cart.png">
+              <h2>Adicionar ao carrinho</h2>
+           </div>
+       </div>
+    </div>
+    <div class="card1-2">
+       <div class="containerlivro">
+          <img class="book" src="imagens/book8.webp">
+
+          <div class="retangulocima">
+             <img class="imgetiqueta" src="imagens/iconefogo.png">
+             <p class="alta">EM ALTA</p>
+          </div>
+      </div>
+
+
+        <div class="partebaixo">
+          <div class="tituloeheart">
+             <h2 class="titulolivro">O Morro dos Ventos Uivantes</h2>
+             <div class="heartfundo">
+                <img class="heart" src="imagens/coracaored.png">
+             </div>
+        </div>
+
+        <p class="autor">Por Emily Brontë</p>
+        <p class="editor">Camelot Editora</p>
+        <div class="estrelas">
+           <div class="estrelas-specifics">
+              <img class="estrelasimg" src="imagens/StarComb.png">
+              <div class="estrelas-specifics-yellowbar"></div>
+           </div>
+           <h3 class="avaliados">(4.3)</h3>
+           <img class="setabaixo" src="imagens/setabaixo.png">
+        </div>
+        <h3 class="precoog"></h3>
+        <div class="precoDiv">
+           <h2 class="preco">R$ 21,90</h2>
+           <h2 class="off"></h2>
+        </div>
+        </div>
+        <div class="cartCamada">
+           <div class="addcartretangulo">
+              <img class="carrinho" src="imagens/cart.png">
+              <h2>Adicionar ao carrinho</h2>
+           </div>
+       </div>
+    </div>
+    <div class="card1-2">
+       <div class="containerlivro">
+          <img class="book" src="imagens/book9.webp">
+
+          <div class="retangulocima">
+             <img class="imgetiqueta" src="imagens/iconefogo.png">
+             <p class="alta">EM ALTA</p>
+          </div>
+      </div>
+
+
+        <div class="partebaixo">
+          <div class="tituloeheart">
+             <h2 class="titulolivro">O Morro dos Ventos Uivantes</h2>
+             <div class="heartfundo">
+                <img class="heart" src="imagens/coracaored.png">
+             </div>
+        </div>
+
+        <p class="autor">Por Emily Brontë</p>
+        <p class="editor">Camelot Editora</p>
+        <div class="estrelas">
+           <div class="estrelas-specifics">
+              <img class="estrelasimg" src="imagens/StarComb.png">
+              <div class="estrelas-specifics-yellowbar"></div>
+           </div>
+           <h3 class="avaliados">(4.3)</h3>
+           <img class="setabaixo" src="imagens/setabaixo.png">
+        </div>
+        <h3 class="precoog"></h3>
+        <div class="precoDiv">
+           <h2 class="preco">R$ 21,90</h2>
+           <h2 class="off"></h2>
+        </div>
+        </div>
+        <div class="cartCamada">
+           <div class="addcartretangulo">
+              <img class="carrinho" src="imagens/cart.png">
+              <h2>Adicionar ao carrinho</h2>
+           </div>
+       </div>
+    </div>
+    <div class="card1-2">
+       <div class="containerlivro">
+          <img class="book" src="imagens/book10.webp">
+
+          <div class="retangulocima">
+             <img class="imgetiqueta" src="imagens/iconefogo.png">
+             <p class="alta">EM ALTA</p>
+          </div>
+      </div>
+
+
+        <div class="partebaixo">
+          <div class="tituloeheart">
+             <h2 class="titulolivro">O Morro dos Ventos Uivantes</h2>
+             <div class="heartfundo">
+                <img class="heart" src="imagens/coracaored.png">
+             </div>
+        </div>
+
+        <p class="autor">Por Emily Brontë</p>
+        <p class="editor">Camelot Editora</p>
+        <div class="estrelas">
+           <div class="estrelas-specifics">
+              <img class="estrelasimg" src="imagens/StarComb.png">
+              <div class="estrelas-specifics-yellowbar"></div>
+           </div>
+           <h3 class="avaliados">(4.3)</h3>
+           <img class="setabaixo" src="imagens/setabaixo.png">
+        </div>
+        <h3 class="precoog"></h3>
+        <div class="precoDiv">
+           <h2 class="preco">R$ 21,90</h2>
+           <h2 class="off"></h2>
+        </div>
+        </div>
+        <div class="cartCamada">
+           <div class="addcartretangulo">
+              <img class="carrinho" src="imagens/cart.png">
+              <h2>Adicionar ao carrinho</h2>
+           </div>
+       </div>
+    </div>
+    <div class="card1-2">
+       <div class="containerlivro">
+          <img class="book" src="imagens/book7.webp">
+
+          <div class="retangulocima">
+             <img class="imgetiqueta" src="imagens/iconefogo.png">
+             <p class="alta">EM ALTA</p>
+          </div>
+      </div>
+
+
+        <div class="partebaixo">
+          <div class="tituloeheart">
+             <h2 class="titulolivro">O Morro dos Ventos Uivantes</h2>
+             <div class="heartfundo">
+                <img class="heart" src="imagens/coracaored.png">
+             </div>
+        </div>
+
+        <p class="autor">Por Emily Brontë</p>
+        <p class="editor">Camelot Editora</p>
+        <div class="estrelas">
+           <div class="estrelas-specifics">
+              <img class="estrelasimg" src="imagens/StarComb.png">
+              <div class="estrelas-specifics-yellowbar"></div>
+           </div>
+           <h3 class="avaliados">(4.3)</h3>
+           <img class="setabaixo" src="imagens/setabaixo.png">
+        </div>
+        <h3 class="precoog"></h3>
+        <div class="precoDiv">
+           <h2 class="preco">R$ 21,90</h2>
+           <h2 class="off"></h2>
+        </div>
+        </div>
+        <div class="cartCamada">
+           <div class="addcartretangulo">
+              <img class="carrinho" src="imagens/cart.png">
+              <h2>Adicionar ao carrinho</h2>
+           </div>
+       </div>
+    </div>
+    <div class="card1-2">
+       <div class="containerlivro">
+          <img class="book" src="imagens/book8.webp">
+
+          <div class="retangulocima">
+             <img class="imgetiqueta" src="imagens/iconefogo.png">
+             <p class="alta">EM ALTA</p>
+          </div>
+      </div>
+
+
+        <div class="partebaixo">
+          <div class="tituloeheart">
+             <h2 class="titulolivro">O Morro dos Ventos Uivantes</h2>
+             <div class="heartfundo">
+                <img class="heart" src="imagens/coracaored.png">
+             </div>
+        </div>
+
+        <p class="autor">Por Emily Brontë</p>
+        <p class="editor">Camelot Editora</p>
+        <div class="estrelas">
+           <div class="estrelas-specifics">
+              <img class="estrelasimg" src="imagens/StarComb.png">
+              <div class="estrelas-specifics-yellowbar"></div>
+           </div>
+           <h3 class="avaliados">(4.3)</h3>
+           <img class="setabaixo" src="imagens/setabaixo.png">
+        </div>
+        <h3 class="precoog"></h3>
+        <div class="precoDiv">
+           <h2 class="preco">R$ 21,90</h2>
+           <h2 class="off"></h2>
+        </div>
+        </div>
+        <div class="cartCamada">
+           <div class="addcartretangulo">
+              <img class="carrinho" src="imagens/cart.png">
+              <h2>Adicionar ao carrinho</h2>
+           </div>
+       </div>
+    </div>
+    <div class="card1-2">
+       <div class="containerlivro">
+          <img class="book" src="imagens/book9.webp">
+
+          <div class="retangulocima">
+             <img class="imgetiqueta" src="imagens/iconefogo.png">
+             <p class="alta">EM ALTA</p>
+          </div>
+      </div>
+
+
+        <div class="partebaixo">
+          <div class="tituloeheart">
+             <h2 class="titulolivro">O Morro dos Ventos Uivantes</h2>
+             <div class="heartfundo">
+                <img class="heart" src="imagens/coracaored.png">
+             </div>
+        </div>
+
+        <p class="autor">Por Emily Brontë</p>
+        <p class="editor">Camelot Editora</p>
+        <div class="estrelas">
+           <div class="estrelas-specifics">
+              <img class="estrelasimg" src="imagens/StarComb.png">
+              <div class="estrelas-specifics-yellowbar"></div>
+           </div>
+           <h3 class="avaliados">(4.3)</h3>
+           <img class="setabaixo" src="imagens/setabaixo.png">
+        </div>
+        <h3 class="precoog"></h3>
+        <div class="precoDiv">
+           <h2 class="preco">R$ 21,90</h2>
+           <h2 class="off"></h2>
+        </div>
+        </div>
+        <div class="cartCamada">
+           <div class="addcartretangulo">
+              <img class="carrinho" src="imagens/cart.png">
+              <h2>Adicionar ao carrinho</h2>
+           </div>
+       </div>
+    </div>
+    <div class="card1-2">
+       <div class="containerlivro">
+          <img class="book" src="imagens/book10.webp">
+
+          <div class="retangulocima">
+             <img class="imgetiqueta" src="imagens/iconefogo.png">
+             <p class="alta">EM ALTA</p>
+          </div>
+      </div>
+
+
+        <div class="partebaixo">
+          <div class="tituloeheart">
+             <h2 class="titulolivro">O Morro dos Ventos Uivantes</h2>
+             <div class="heartfundo">
+                <img class="heart" src="imagens/coracaored.png">
+             </div>
+        </div>
+
+        <p class="autor">Por Emily Brontë</p>
+        <p class="editor">Camelot Editora</p>
+        <div class="estrelas">
+           <div class="estrelas-specifics">
+              <img class="estrelasimg" src="imagens/StarComb.png">
+              <div class="estrelas-specifics-yellowbar"></div>
+           </div>
+           <h3 class="avaliados">(4.3)</h3>
+           <img class="setabaixo" src="imagens/setabaixo.png">
+        </div>
+        <h3 class="precoog"></h3>
+        <div class="precoDiv">
+           <h2 class="preco">R$ 21,90</h2>
+           <h2 class="off"></h2>
+        </div>
+        </div>
+        <div class="cartCamada">
+           <div class="addcartretangulo">
+              <img class="carrinho" src="imagens/cart.png">
+              <h2>Adicionar ao carrinho</h2>
+           </div>
+       </div>
+    </div>
+    <div class="card1-2">
+       <div class="containerlivro">
+          <img class="book" src="imagens/book7.webp">
+
+          <div class="retangulocima">
+             <img class="imgetiqueta" src="imagens/iconefogo.png">
+             <p class="alta">EM ALTA</p>
+          </div>
+      </div>
+
+
+        <div class="partebaixo">
+          <div class="tituloeheart">
+             <h2 class="titulolivro">O Morro dos Ventos Uivantes</h2>
+             <div class="heartfundo">
+                <img class="heart" src="imagens/coracaored.png">
+             </div>
+        </div>
+
+        <p class="autor">Por Emily Brontë</p>
+        <p class="editor">Camelot Editora</p>
+        <div class="estrelas">
+           <div class="estrelas-specifics">
+              <img class="estrelasimg" src="imagens/StarComb.png">
+              <div class="estrelas-specifics-yellowbar"></div>
+           </div>
+           <h3 class="avaliados">(4.3)</h3>
+           <img class="setabaixo" src="imagens/setabaixo.png">
+        </div>
+        <h3 class="precoog"></h3>
+        <div class="precoDiv">
+           <h2 class="preco">R$ 21,90</h2>
+           <h2 class="off"></h2>
+        </div>
+        </div>
+        <div class="cartCamada">
+           <div class="addcartretangulo">
+              <img class="carrinho" src="imagens/cart.png">
+              <h2>Adicionar ao carrinho</h2>
+           </div>
+       </div>
+    </div>
+    <div class="card1-2">
+       <div class="containerlivro">
+          <img class="book" src="imagens/book8.webp">
+
+          <div class="retangulocima">
+             <img class="imgetiqueta" src="imagens/iconefogo.png">
+             <p class="alta">EM ALTA</p>
+          </div>
+      </div>
+
+
+        <div class="partebaixo">
+          <div class="tituloeheart">
+             <h2 class="titulolivro">O Morro dos Ventos Uivantes</h2>
+             <div class="heartfundo">
+                <img class="heart" src="imagens/coracaored.png">
+             </div>
+        </div>
+
+        <p class="autor">Por Emily Brontë</p>
+        <p class="editor">Camelot Editora</p>
+        <div class="estrelas">
+           <div class="estrelas-specifics">
+              <img class="estrelasimg" src="imagens/StarComb.png">
+              <div class="estrelas-specifics-yellowbar"></div>
+           </div>
+           <h3 class="avaliados">(4.3)</h3>
+           <img class="setabaixo" src="imagens/setabaixo.png">
+        </div>
+        <h3 class="precoog"></h3>
+        <div class="precoDiv">
+           <h2 class="preco">R$ 21,90</h2>
+           <h2 class="off"></h2>
+        </div>
+        </div>
+        <div class="cartCamada">
+           <div class="addcartretangulo">
+              <img class="carrinho" src="imagens/cart.png">
+              <h2>Adicionar ao carrinho</h2>
+           </div>
+       </div>
+    </div>
+    <div class="card1-2">
+       <div class="containerlivro">
+          <img class="book" src="imagens/book9.webp">
+
+          <div class="retangulocima">
+             <img class="imgetiqueta" src="imagens/iconefogo.png">
+             <p class="alta">EM ALTA</p>
+          </div>
+      </div>
+
+
+        <div class="partebaixo">
+          <div class="tituloeheart">
+             <h2 class="titulolivro">O Morro dos Ventos Uivantes</h2>
+             <div class="heartfundo">
+                <img class="heart" src="imagens/coracaored.png">
+             </div>
+        </div>
+
+        <p class="autor">Por Emily Brontë</p>
+        <p class="editor">Camelot Editora</p>
+        <div class="estrelas">
+           <div class="estrelas-specifics">
+              <img class="estrelasimg" src="imagens/StarComb.png">
+              <div class="estrelas-specifics-yellowbar"></div>
+           </div>
+           <h3 class="avaliados">(4.3)</h3>
+           <img class="setabaixo" src="imagens/setabaixo.png">
+        </div>
+        <h3 class="precoog"></h3>
+        <div class="precoDiv">
+           <h2 class="preco">R$ 21,90</h2>
+           <h2 class="off"></h2>
+        </div>
+        </div>
+        <div class="cartCamada">
+           <div class="addcartretangulo">
+              <img class="carrinho" src="imagens/cart.png">
+              <h2>Adicionar ao carrinho</h2>
+           </div>
+       </div>
+    </div>
+    <div class="card1-2">
+       <div class="containerlivro">
+          <img class="book" src="imagens/book10.webp">
+
+          <div class="retangulocima">
+             <img class="imgetiqueta" src="imagens/iconefogo.png">
+             <p class="alta">EM ALTA</p>
+          </div>
+      </div>
+
+
+        <div class="partebaixo">
+          <div class="tituloeheart">
+             <h2 class="titulolivro">O Morro dos Ventos Uivantes</h2>
+             <div class="heartfundo">
+                <img class="heart" src="imagens/coracaored.png">
+             </div>
+        </div>
+
+        <p class="autor">Por Emily Brontë</p>
+        <p class="editor">Camelot Editora</p>
+        <div class="estrelas">
+           <div class="estrelas-specifics">
+              <img class="estrelasimg" src="imagens/StarComb.png">
+              <div class="estrelas-specifics-yellowbar"></div>
+           </div>
+           <h3 class="avaliados">(4.3)</h3>
+           <img class="setabaixo" src="imagens/setabaixo.png">
+        </div>
+        <h3 class="precoog"></h3>
+        <div class="precoDiv">
+           <h2 class="preco">R$ 21,90</h2>
+           <h2 class="off"></h2>
+        </div>
+        </div>
+        <div class="cartCamada">
+           <div class="addcartretangulo">
+              <img class="carrinho" src="imagens/cart.png">
+              <h2>Adicionar ao carrinho</h2>
+           </div>
+       </div>
+    </div>
+    <div class="card1-2">
+       <div class="containerlivro">
+          <img class="book" src="imagens/book7.webp">
+
+          <div class="retangulocima">
+             <img class="imgetiqueta" src="imagens/iconefogo.png">
+             <p class="alta">EM ALTA</p>
+          </div>
+      </div>
+
+
+        <div class="partebaixo">
+          <div class="tituloeheart">
+             <h2 class="titulolivro">O Morro dos Ventos Uivantes</h2>
+             <div class="heartfundo">
+                <img class="heart" src="imagens/coracaored.png">
+             </div>
+        </div>
+
+        <p class="autor">Por Emily Brontë</p>
+        <p class="editor">Camelot Editora</p>
+        <div class="estrelas">
+           <div class="estrelas-specifics">
+              <img class="estrelasimg" src="imagens/StarComb.png">
+              <div class="estrelas-specifics-yellowbar"></div>
+           </div>
+           <h3 class="avaliados">(4.3)</h3>
+           <img class="setabaixo" src="imagens/setabaixo.png">
+        </div>
+        <h3 class="precoog"></h3>
+        <div class="precoDiv">
+           <h2 class="preco">R$ 21,90</h2>
+           <h2 class="off"></h2>
+        </div>
+        </div>
+        <div class="cartCamada">
+           <div class="addcartretangulo">
+              <img class="carrinho" src="imagens/cart.png">
+              <h2>Adicionar ao carrinho</h2>
+           </div>
+       </div>
+    </div>
+    <div class="card1-2">
+       <div class="containerlivro">
+          <img class="book" src="imagens/book8.webp">
+
+          <div class="retangulocima">
+             <img class="imgetiqueta" src="imagens/iconefogo.png">
+             <p class="alta">EM ALTA</p>
+          </div>
+      </div>
+
+
+        <div class="partebaixo">
+          <div class="tituloeheart">
+             <h2 class="titulolivro">O Morro dos Ventos Uivantes</h2>
+             <div class="heartfundo">
+                <img class="heart" src="imagens/coracaored.png">
+             </div>
+        </div>
+
+        <p class="autor">Por Emily Brontë</p>
+        <p class="editor">Camelot Editora</p>
+        <div class="estrelas">
+           <div class="estrelas-specifics">
+              <img class="estrelasimg" src="imagens/StarComb.png">
+              <div class="estrelas-specifics-yellowbar"></div>
+           </div>
+           <h3 class="avaliados">(4.3)</h3>
+           <img class="setabaixo" src="imagens/setabaixo.png">
+        </div>
+        <h3 class="precoog"></h3>
+        <div class="precoDiv">
+           <h2 class="preco">R$ 21,90</h2>
+           <h2 class="off"></h2>
+        </div>
+        </div>
+        <div class="cartCamada">
+           <div class="addcartretangulo">
+              <img class="carrinho" src="imagens/cart.png">
+              <h2>Adicionar ao carrinho</h2>
+           </div>
+       </div>
+    </div>
+    <div class="card1-2">
+       <div class="containerlivro">
+          <img class="book" src="imagens/book9.webp">
+
+          <div class="retangulocima">
+             <img class="imgetiqueta" src="imagens/iconefogo.png">
+             <p class="alta">EM ALTA</p>
+          </div>
+      </div>
+
+
+        <div class="partebaixo">
+          <div class="tituloeheart">
+             <h2 class="titulolivro">O Morro dos Ventos Uivantes</h2>
+             <div class="heartfundo">
+                <img class="heart" src="imagens/coracaored.png">
+             </div>
+        </div>
+
+        <p class="autor">Por Emily Brontë</p>
+        <p class="editor">Camelot Editora</p>
+        <div class="estrelas">
+           <div class="estrelas-specifics">
+              <img class="estrelasimg" src="imagens/StarComb.png">
+              <div class="estrelas-specifics-yellowbar"></div>
+           </div>
+           <h3 class="avaliados">(4.3)</h3>
+           <img class="setabaixo" src="imagens/setabaixo.png">
+        </div>
+        <h3 class="precoog"></h3>
+        <div class="precoDiv">
+           <h2 class="preco">R$ 21,90</h2>
+           <h2 class="off"></h2>
+        </div>
+        </div>
+        <div class="cartCamada">
+           <div class="addcartretangulo">
+              <img class="carrinho" src="imagens/cart.png">
+              <h2>Adicionar ao carrinho</h2>
+           </div>
+       </div>
+    </div>
+    <div class="card1-2">
+       <div class="containerlivro">
+          <img class="book" src="imagens/book10.webp">
+
+          <div class="retangulocima">
+             <img class="imgetiqueta" src="imagens/iconefogo.png">
+             <p class="alta">EM ALTA</p>
+          </div>
+      </div>
+
+
+        <div class="partebaixo">
+          <div class="tituloeheart">
+             <h2 class="titulolivro">O Morro dos Ventos Uivantes</h2>
+             <div class="heartfundo">
+                <img class="heart" src="imagens/coracaored.png">
+             </div>
+        </div>
+
+        <p class="autor">Por Emily Brontë</p>
+        <p class="editor">Camelot Editora</p>
+        <div class="estrelas">
+           <div class="estrelas-specifics">
+              <img class="estrelasimg" src="imagens/StarComb.png">
+              <div class="estrelas-specifics-yellowbar"></div>
+           </div>
+           <h3 class="avaliados">(4.3)</h3>
+           <img class="setabaixo" src="imagens/setabaixo.png">
+        </div>
+        <h3 class="precoog"></h3>
+        <div class="precoDiv">
+           <h2 class="preco">R$ 21,90</h2>
+           <h2 class="off"></h2>
+        </div>
+        </div>
+        <div class="cartCamada">
+           <div class="addcartretangulo">
+              <img class="carrinho" src="imagens/cart.png">
+              <h2>Adicionar ao carrinho</h2>
+           </div>
+       </div>
+    </div>
+    <div class="card1-2">
+       <div class="containerlivro">
+          <img class="book" src="imagens/book7.webp">
+
+          <div class="retangulocima">
+             <img class="imgetiqueta" src="imagens/iconefogo.png">
+             <p class="alta">EM ALTA</p>
+          </div>
+      </div>
+
+
+        <div class="partebaixo">
+          <div class="tituloeheart">
+             <h2 class="titulolivro">O Morro dos Ventos Uivantes</h2>
+             <div class="heartfundo">
+                <img class="heart" src="imagens/coracaored.png">
+             </div>
+        </div>
+
+        <p class="autor">Por Emily Brontë</p>
+        <p class="editor">Camelot Editora</p>
+        <div class="estrelas">
+           <div class="estrelas-specifics">
+              <img class="estrelasimg" src="imagens/StarComb.png">
+              <div class="estrelas-specifics-yellowbar"></div>
+           </div>
+           <h3 class="avaliados">(4.3)</h3>
+           <img class="setabaixo" src="imagens/setabaixo.png">
+        </div>
+        <h3 class="precoog"></h3>
+        <div class="precoDiv">
+           <h2 class="preco">R$ 21,90</h2>
+           <h2 class="off"></h2>
+        </div>
+        </div>
+        <div class="cartCamada">
+           <div class="addcartretangulo">
+              <img class="carrinho" src="imagens/cart.png">
+              <h2>Adicionar ao carrinho</h2>
+           </div>
+       </div>
+    </div>
+    <div class="card1-2">
+       <div class="containerlivro">
+          <img class="book" src="imagens/book8.webp">
+
+          <div class="retangulocima">
+             <img class="imgetiqueta" src="imagens/iconefogo.png">
+             <p class="alta">EM ALTA</p>
+          </div>
+      </div>
+
+
+        <div class="partebaixo">
+          <div class="tituloeheart">
+             <h2 class="titulolivro">O Morro dos Ventos Uivantes</h2>
+             <div class="heartfundo">
+                <img class="heart" src="imagens/coracaored.png">
+             </div>
+        </div>
+
+        <p class="autor">Por Emily Brontë</p>
+        <p class="editor">Camelot Editora</p>
+        <div class="estrelas">
+           <div class="estrelas-specifics">
+              <img class="estrelasimg" src="imagens/StarComb.png">
+              <div class="estrelas-specifics-yellowbar"></div>
+           </div>
+           <h3 class="avaliados">(4.3)</h3>
+           <img class="setabaixo" src="imagens/setabaixo.png">
+        </div>
+        <h3 class="precoog"></h3>
+        <div class="precoDiv">
+           <h2 class="preco">R$ 21,90</h2>
+           <h2 class="off"></h2>
+        </div>
+        </div>
+        <div class="cartCamada">
+           <div class="addcartretangulo">
+              <img class="carrinho" src="imagens/cart.png">
+              <h2>Adicionar ao carrinho</h2>
+           </div>
+       </div>
+    </div>
+    <div class="card1-2">
+       <div class="containerlivro">
+          <img class="book" src="imagens/book9.webp">
+
+          <div class="retangulocima">
+             <img class="imgetiqueta" src="imagens/iconefogo.png">
+             <p class="alta">EM ALTA</p>
+          </div>
+      </div>
+
+
+        <div class="partebaixo">
+          <div class="tituloeheart">
+             <h2 class="titulolivro">O Morro dos Ventos Uivantes</h2>
+             <div class="heartfundo">
+                <img class="heart" src="imagens/coracaored.png">
+             </div>
+        </div>
+
+        <p class="autor">Por Emily Brontë</p>
+        <p class="editor">Camelot Editora</p>
+        <div class="estrelas">
+           <div class="estrelas-specifics">
+              <img class="estrelasimg" src="imagens/StarComb.png">
+              <div class="estrelas-specifics-yellowbar"></div>
+           </div>
+           <h3 class="avaliados">(4.3)</h3>
+           <img class="setabaixo" src="imagens/setabaixo.png">
+        </div>
+        <h3 class="precoog"></h3>
+        <div class="precoDiv">
+           <h2 class="preco">R$ 21,90</h2>
+           <h2 class="off"></h2>
+        </div>
+        </div>
+        <div class="cartCamada">
+           <div class="addcartretangulo">
+              <img class="carrinho" src="imagens/cart.png">
+              <h2>Adicionar ao carrinho</h2>
+           </div>
+       </div>
+    </div>
+    <div class="card1-2">
+       <div class="containerlivro">
+          <img class="book" src="imagens/book10.webp">
+
+          <div class="retangulocima">
+             <img class="imgetiqueta" src="imagens/iconefogo.png">
+             <p class="alta">EM ALTA</p>
+          </div>
+      </div>
+
+
+        <div class="partebaixo">
+          <div class="tituloeheart">
+             <h2 class="titulolivro">O Morro dos Ventos Uivantes</h2>
+             <div class="heartfundo">
+                <img class="heart" src="imagens/coracaored.png">
+             </div>
+        </div>
+
+        <p class="autor">Por Emily Brontë</p>
+        <p class="editor">Camelot Editora</p>
+        <div class="estrelas">
+           <div class="estrelas-specifics">
+              <img class="estrelasimg" src="imagens/StarComb.png">
+              <div class="estrelas-specifics-yellowbar"></div>
+           </div>
+           <h3 class="avaliados">(4.3)</h3>
+           <img class="setabaixo" src="imagens/setabaixo.png">
+        </div>
+        <h3 class="precoog"></h3>
+        <div class="precoDiv">
+           <h2 class="preco">R$ 21,90</h2>
+           <h2 class="off"></h2>
+        </div>
+        </div>
+        <div class="cartCamada">
+           <div class="addcartretangulo">
+              <img class="carrinho" src="imagens/cart.png">
+              <h2>Adicionar ao carrinho</h2>
+           </div>
+       </div>
+    </div>
+    <div class="card1-2">
+       <div class="containerlivro">
+          <img class="book" src="imagens/book7.webp">
+
+          <div class="retangulocima">
+             <img class="imgetiqueta" src="imagens/iconefogo.png">
+             <p class="alta">EM ALTA</p>
+          </div>
+      </div>
+
+
+        <div class="partebaixo">
+          <div class="tituloeheart">
+             <h2 class="titulolivro">O Morro dos Ventos Uivantes</h2>
+             <div class="heartfundo">
+                <img class="heart" src="imagens/coracaored.png">
+             </div>
+        </div>
+
+        <p class="autor">Por Emily Brontë</p>
+        <p class="editor">Camelot Editora</p>
+        <div class="estrelas">
+           <div class="estrelas-specifics">
+              <img class="estrelasimg" src="imagens/StarComb.png">
+              <div class="estrelas-specifics-yellowbar"></div>
+           </div>
+           <h3 class="avaliados">(4.3)</h3>
+           <img class="setabaixo" src="imagens/setabaixo.png">
+        </div>
+        <h3 class="precoog"></h3>
+        <div class="precoDiv">
+           <h2 class="preco">R$ 21,90</h2>
+           <h2 class="off"></h2>
+        </div>
+        </div>
+        <div class="cartCamada">
+           <div class="addcartretangulo">
+              <img class="carrinho" src="imagens/cart.png">
+              <h2>Adicionar ao carrinho</h2>
+           </div>
+       </div>
+    </div>
+    <div class="card1-2">
+       <div class="containerlivro">
+          <img class="book" src="imagens/book8.webp">
+
+          <div class="retangulocima">
+             <img class="imgetiqueta" src="imagens/iconefogo.png">
+             <p class="alta">EM ALTA</p>
+          </div>
+      </div>
+
+
+        <div class="partebaixo">
+          <div class="tituloeheart">
+             <h2 class="titulolivro">O Morro dos Ventos Uivantes</h2>
+             <div class="heartfundo">
+                <img class="heart" src="imagens/coracaored.png">
+             </div>
+        </div>
+
+        <p class="autor">Por Emily Brontë</p>
+        <p class="editor">Camelot Editora</p>
+        <div class="estrelas">
+           <div class="estrelas-specifics">
+              <img class="estrelasimg" src="imagens/StarComb.png">
+              <div class="estrelas-specifics-yellowbar"></div>
+           </div>
+           <h3 class="avaliados">(4.3)</h3>
+           <img class="setabaixo" src="imagens/setabaixo.png">
+        </div>
+        <h3 class="precoog"></h3>
+        <div class="precoDiv">
+           <h2 class="preco">R$ 21,90</h2>
+           <h2 class="off"></h2>
+        </div>
+        </div>
+        <div class="cartCamada">
+           <div class="addcartretangulo">
+              <img class="carrinho" src="imagens/cart.png">
+              <h2>Adicionar ao carrinho</h2>
+           </div>
+       </div>
+    </div>
+    <div class="card1-2">
+       <div class="containerlivro">
+          <img class="book" src="imagens/book9.webp">
+
+          <div class="retangulocima">
+             <img class="imgetiqueta" src="imagens/iconefogo.png">
+             <p class="alta">EM ALTA</p>
+          </div>
+      </div>
+
+
+        <div class="partebaixo">
+          <div class="tituloeheart">
+             <h2 class="titulolivro">O Morro dos Ventos Uivantes</h2>
+             <div class="heartfundo">
+                <img class="heart" src="imagens/coracaored.png">
+             </div>
+        </div>
+
+        <p class="autor">Por Emily Brontë</p>
+        <p class="editor">Camelot Editora</p>
+        <div class="estrelas">
+           <div class="estrelas-specifics">
+              <img class="estrelasimg" src="imagens/StarComb.png">
+              <div class="estrelas-specifics-yellowbar"></div>
+           </div>
+           <h3 class="avaliados">(4.3)</h3>
+           <img class="setabaixo" src="imagens/setabaixo.png">
+        </div>
+        <h3 class="precoog"></h3>
+        <div class="precoDiv">
+           <h2 class="preco">R$ 21,90</h2>
+           <h2 class="off"></h2>
+        </div>
+        </div>
+        <div class="cartCamada">
+           <div class="addcartretangulo">
+              <img class="carrinho" src="imagens/cart.png">
+              <h2>Adicionar ao carrinho</h2>
+           </div>
+       </div>
+    </div>
+    <div class="card1-2">
+       <div class="containerlivro">
+          <img class="book" src="imagens/book10.webp">
+
+          <div class="retangulocima">
+             <img class="imgetiqueta" src="imagens/iconefogo.png">
+             <p class="alta">EM ALTA</p>
+          </div>
+      </div>
+
+
+        <div class="partebaixo">
+          <div class="tituloeheart">
+             <h2 class="titulolivro">O Morro dos Ventos Uivantes</h2>
+             <div class="heartfundo">
+                <img class="heart" src="imagens/coracaored.png">
+             </div>
+        </div>
+
+        <p class="autor">Por Emily Brontë</p>
+        <p class="editor">Camelot Editora</p>
+        <div class="estrelas">
+           <div class="estrelas-specifics">
+              <img class="estrelasimg" src="imagens/StarComb.png">
+              <div class="estrelas-specifics-yellowbar"></div>
+           </div>
+           <h3 class="avaliados">(4.3)</h3>
+           <img class="setabaixo" src="imagens/setabaixo.png">
+        </div>
+        <h3 class="precoog"></h3>
+        <div class="precoDiv">
+           <h2 class="preco">R$ 21,90</h2>
+           <h2 class="off"></h2>
+        </div>
+        </div>
+        <div class="cartCamada">
+           <div class="addcartretangulo">
+              <img class="carrinho" src="imagens/cart.png">
+              <h2>Adicionar ao carrinho</h2>
+           </div>
+       </div>
+    </div>
+    
         </section>
     </div>
+    <footer>
+        <section class="footer-space-top"></section>
+        <section class="footer-content">
+            <div class="footer-topics">
+                <h2 class="footer-topics-title">Sobre nós</h2>
+                <div class="footer-topics-list">
+                    <a class="footer-topics-link" >Legítimo</a>
+                    <a class="footer-topics-link" >Créditos</a>
+                    <a class="footer-topics-link" >Informações corporativas</a>
+                    <a class="footer-topics-link" >Tecnologias</a>
+                </div>
+            </div>
+            <div class="footer-topics">
+                <h2 class="footer-topics-title">Coopere conosco</h2>
+                <div class="footer-topics-list">
+                    <a class="footer-topics-link" >Doe livros usados</a>
+                    <a class="footer-topics-link" >Seja um fornecedor</a>
+                    <a class="footer-topics-link" >Avalie livros comprados</a>
+                    <a class="footer-topics-link" >Doe dinheiro</a>
+                </div>
+            </div>
+            <div class="footer-topics-center">
+                <a class="footer-topics-center-backstart">Voltar ao início</a>
+                <img src="./imagens/iconFooter.png" class="footer-topics-center-icon"/>
+            </div>
+            <div class="footer-topics">
+                <h2 class="footer-topics-title">Pagamento</h2>
+                <div class="footer-topics-list">
+                    <a class="footer-topics-link" >Meios de pagamento</a>
+                    <a class="footer-topics-link" >Bônus disponíveis</a>
+                    <a class="footer-topics-link" >Termos e condições</a>
+                </div>
+            </div>
+            <div class="footer-topics">
+                <h2 class="footer-topics-title">Contato</h2>
+                <div class="footer-topics-list">
+                    <a class="footer-topics-link" >Ajuda por telefone</a>
+                    <a class="footer-topics-link" >Visite a loja física</a>
+                    <a class="footer-topics-link" >Frete e prazo de entrega</a>
+                    <a class="footer-topics-link" >Reembolsos</a>
+                </div>
+            </div>
+        </section>
+        <section class="footer-foot">
+            <h2 class="footer-foot-line"> <span class="footer-foot-span">Condições de uso</span> | <span class="footer-foot-span">Cookies</span> | <span class="footer-foot-span">@2026 Legitimolivros.com</span></h2>
+        </section>
+    </footer>
+    <script>
+        const lateralBar = document.querySelector('.lateral-bar');
+        const lateralBarLeave = document.querySelector('.lateral-bar-userDiv-leave');
+        const headerMenu = document.querySelector('.deeper-header-menu-icon');
+
+        lateralBarLeave.addEventListener('click', () => {
+            lateralBar.style.left = '-35%';
+        });
+        headerMenu.addEventListener('click', () => {
+            lateralBar.style.left = '0%';
+        });
+    </script>
 </body>
 </html>
