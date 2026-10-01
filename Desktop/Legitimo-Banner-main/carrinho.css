@@ -1,0 +1,23 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.main-carrinho{
+    background-color: #FAFAFA;
+    display: flex;
+    flex-direction: column;
+    font-family: "Inter", sans-serif
+}
+.main-carrinho-header{
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    padding: 20px;
+    gap: 2%;
+}
+.main-carrinho-header-item-text{
+    font-size: 20px;
+    font-weight: 500;
+}
