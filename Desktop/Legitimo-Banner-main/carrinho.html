@@ -4,22 +4,93 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="carrinho.css">
+    <link rel="stylesheet" href="./styleHeader.css">
+    <link rel="stylesheet" href="./indexFooter.css">
+    <link rel="stylesheet" href="./lateralBar.css">
     <title>Carrinho</title>
 </head>
 <body>
+    <div class="lateral-bar">
+        <section class="lateral-bar-header">
+            <div class="lateral-bar-userDiv">
+                <img src="./imagens/cliente_iconbar.png" class="lateral-bar-userDiv-image"/>
+                <h2 class="lateral-bar-userDiv-name">Usuário não conectado</h2>
+            </div>
+            <img src="./imagens/leave_iconbar.png" class="lateral-bar-userDiv-leave"/>
+        </section>
+        <section class="lateral-bar-content">
+            <div class="lateral-bar-content-block">
+                <h2 class="lateral-bar-content-block-title">Destaques</h2>
+                <li class="lateral-bar-content-block-list">
+                    <a class="lateral-bar-content-block-list-item">Mais vendidos</a>
+                    <a class="lateral-bar-content-block-list-item">Ofertas do mês</a>
+                    <a class="lateral-bar-content-block-list-item">Bem avaliados</a>
+                </li>
+            </div>
+            <div class="lateral-bar-content-block">
+                <h2 class="lateral-bar-content-block-title">Para você</h2>
+                <li class="lateral-bar-content-block-list">
+                    <a class="lateral-bar-content-block-list-item">Talvez você goste</a>
+                    <a class="lateral-bar-content-block-list-item">Minhas compras</a>
+                    <a class="lateral-bar-content-block-list-item">Meus cupons</a>
+                    <a class="lateral-bar-content-block-list-item">Avaliações disponíveis</a>
+                    <a class="lateral-bar-content-block-list-item">Favoritos</a>
+                </li>
+            </div>
+            <div class="lateral-bar-content-block">
+                <h2 class="lateral-bar-content-block-title">Escolha do seu jeito</h2>
+                <li class="lateral-bar-content-block-list">
+                    <a class="lateral-bar-content-block-list-item">Gêneros</a>
+                    <a class="lateral-bar-content-block-list-item">Procurar livros</a>
+                    <a class="lateral-bar-content-block-list-item">Autores</a>
+                    <a class="lateral-bar-content-block-list-item">Histórico de navegação</a>
+                </li>
+            </div>
+        </section>
+    </div>
+   <header>
+        <section class="uper-header">
+            <img src="./imagens/logoLivraria.png" class="logo-header">
+            <div class="search-bar-header">
+                <a class="icon-search-bar-font"><img src="./imagens/SearchbarIcon.png" class="icon-search-bar"></a>
+                <input type="text" class="input-search-bar" placeholder="Digite livros, autores ou editoras"/>
+            </div>
+            <a class="carrinho-header">
+                <h2 class="tittle-carrinho-header">Carrinho de compras</h2>
+                <div class="icon-carrinho-header">
+                    <img src="./imagens/CartIcon.png" class="image-icon-carrinho-header">
+                    <h3 class="number-carrinho-header">1</h3>
+                </div>
+            </a>
+            <div class="entry-header">
+                <a class="tittle-login-header">Olá Sr. Anônimo</a>
+            </div>
+        </section>
+        <section class="deeper-header">
+            <a class="font-deeper-header-menu"><img src="./imagens/menuIcon.png" class="deeper-header-menu-icon"></a>
+            <div class="main-items-deeper">
+                <a class="main-items-deeper-text">Ofertas</a>
+                <a class="main-items-deeper-text">Destaques</a>
+                <a class="main-items-deeper-text">Lançamentos</a>
+                <a class="main-items-deeper-text">Contato</a>
+                <a class="main-items-deeper-text">Clássicos</a>
+            </div>
+            <a class="deeper-header-bonus">Bônus disponíveis</a>
+        </section>
+    </header>
     <main class="main-carrinho">
         <section class="main-carrinho-header">
             <div class="main-carrinho-header-item">
-                <img src="" class="main-carrinho-header-item-icon"/>
-                <h2 class="main-carrinho-header-item-text">1.Carrinho</h2>
+                <img src="./imagens/KartA.png" class="main-carrinho-header-item-icon"/>
+                <h2 class="main-carrinho-header-item-text carrinhos-active">1.Carrinho</h2>
             </div>
             <div class="main-carrinho-header-item">
-                <img src="" class="main-carrinho-header-item-icon"/>
-                <h2 class="main-carrinho-header-item-text">2.Confirmar endereço</h2>
+                <img src="./imagens/LocalD.png" class="main-carrinho-header-item-icon"/>
+                <h2 class="main-carrinho-header-item-text carrinhos-inactive">2.Confirmar endereço</h2>
             </div>
             <div class="main-carrinho-header-item">
-                <img src="" class="main-carrinho-header-item-icon"/>
-                <h2 class="main-carrinho-header-item-text">3.Confirmar pagamento</h2>
+                <img src="./imagens/BuyD.png" class="main-carrinho-header-item-icon"/>
+                <h2 class="main-carrinho-header-item-text carrinhos-inactive">3.Confirmar pagamento</h2>
             </div>
         </section>
         <section class="main-carrinho-content">
@@ -31,18 +102,47 @@
                         <div class="main-carrinho-content-card-info-subinfo">
                             <div class="main-carrinho-content-card-info-subinfo-descriptions">
                                 <h4 class="main-carrinho-content-card-info-subinfo-descriptions-editora">Editora: Panini</h4>
-                                <h4 class="main-carrinho-content-card-info-subingo-descriptions-tipo">Capa mole</h4>
+                                <h4 class="main-carrinho-content-card-info-subinfo-descriptions-tipo">Capa mole</h4>
                                 <h5 class="main-carrinho-content-card-info-subinfo-descriptions-exemplares">Restam 11 exemplares disponíveis</h5>
                             </div>
                             <div class="main-carrinho-content-card-info-subinfo-qtd">
                                 <h4 class="main-carrinho-content-card-info-subinfo-off">23% off</h4>
                                 <div class="main-carrinho-content-card-info-subinfo-qtd-block">
-                                    <h3 class="qtd-block-minus">-</h3>
+                                    <img class="qtd-block-minus" src="./imagens/minus.png"/>
                                     <input type="number" class="main-carrinho-content-card-info-subinfo-qtd-block-input"/>
-                                    <h3 class="qtd-block-plus">+</h3>
+                                    <img class="qtd-block-plus" src="./imagens/plus.png"/>
                                 </div>
                             </div>
-                            <h3 class="main-carrinho-content-card-info-subinfo-price">R$58,50</h3>
+                            <div class="main-carrinho-content-card-info-subinfo-price">
+                                <h4 class="main-carrinho-content-card-info-subinfo-price-off">R$75,90</h4>
+                                <h3 class="main-carrinho-content-card-info-subinfo-price-now">R$58,50</h3>
+                            </div>
+                        </div>
+                        <img src="./imagens/trash.png" class="main-carrinho-content-card-info-remove"/>
+                    </div>
+                </div>
+                <div class="main-carrinho-content-card">
+                    <img src="./imagens/book12.jpg" class="main-carrinho-content-card-img"/>
+                    <div class="main-carrinho-content-card-info">
+                        <h2 class="main-carrinho-content-card-info-title">Dom Quixote <span>Cervantes</span></h2>
+                        <div class="main-carrinho-content-card-info-subinfo">
+                            <div class="main-carrinho-content-card-info-subinfo-descriptions">
+                                <h4 class="main-carrinho-content-card-info-subinfo-descriptions-editora">Editora: Antofágica</h4>
+                                <h4 class="main-carrinho-content-card-info-subinfo-descriptions-tipo">Capa dura</h4>
+                                <h5 class="main-carrinho-content-card-info-subinfo-descriptions-exemplares">Restam 11 exemplares disponíveis</h5>
+                            </div>
+                            <div class="main-carrinho-content-card-info-subinfo-qtd">
+                                <h4 class="main-carrinho-content-card-info-subinfo-off">20% off</h4>
+                                <div class="main-carrinho-content-card-info-subinfo-qtd-block">
+                                    <img class="qtd-block-minus" src="./imagens/minus.png"/>
+                                    <input type="number" class="main-carrinho-content-card-info-subinfo-qtd-block-input"/>
+                                    <img class="qtd-block-plus" src="./imagens/plus.png"/>
+                                </div>
+                            </div>
+                            <div class="main-carrinho-content-card-info-subinfo-price">
+                                <h4 class="main-carrinho-content-card-info-subinfo-price-off">R$100,00</h4>
+                                <h3 class="main-carrinho-content-card-info-subinfo-price-now">R$80,00</h3>
+                            </div>
                         </div>
                         <img src="./imagens/trash.png" class="main-carrinho-content-card-info-remove"/>
                     </div>
@@ -79,6 +179,64 @@
             </div>
         </section>
     </main>
-    
+    <footer>
+        <section class="footer-space-top"></section>
+        <section class="footer-content">
+            <div class="footer-topics">
+                <h2 class="footer-topics-title">Sobre nós</h2>
+                <div class="footer-topics-list">
+                    <a class="footer-topics-link" >Legítimo</a>
+                    <a class="footer-topics-link" >Créditos</a>
+                    <a class="footer-topics-link" >Informações corporativas</a>
+                    <a class="footer-topics-link" >Tecnologias</a>
+                </div>
+            </div>
+            <div class="footer-topics">
+                <h2 class="footer-topics-title">Coopere conosco</h2>
+                <div class="footer-topics-list">
+                    <a class="footer-topics-link" >Doe livros usados</a>
+                    <a class="footer-topics-link" >Seja um fornecedor</a>
+                    <a class="footer-topics-link" >Avalie livros comprados</a>
+                    <a class="footer-topics-link" >Doe dinheiro</a>
+                </div>
+            </div>
+            <div class="footer-topics-center">
+                <a class="footer-topics-center-backstart">Voltar ao início</a>
+                <img src="./imagens/iconFooter.png" class="footer-topics-center-icon"/>
+            </div>
+            <div class="footer-topics">
+                <h2 class="footer-topics-title">Pagamento</h2>
+                <div class="footer-topics-list">
+                    <a class="footer-topics-link" >Meios de pagamento</a>
+                    <a class="footer-topics-link" >Bônus disponíveis</a>
+                    <a class="footer-topics-link" >Termos e condições</a>
+                </div>
+            </div>
+            <div class="footer-topics">
+                <h2 class="footer-topics-title">Contato</h2>
+                <div class="footer-topics-list">
+                    <a class="footer-topics-link" >Ajuda por telefone</a>
+                    <a class="footer-topics-link" >Visite a loja física</a>
+                    <a class="footer-topics-link" >Frete e prazo de entrega</a>
+                    <a class="footer-topics-link" >Reembolsos</a>
+                </div>
+            </div>
+        </section>
+        <section class="footer-foot">
+            <h2 class="footer-foot-line"> <span class="footer-foot-span">Condições de uso</span> | <span class="footer-foot-span">Cookies</span> | <span class="footer-foot-span">@2026 Legitimolivros.com</span></h2>
+        </section>
+    </footer>
+    <script>
+        const lateralBar = document.querySelector('.lateral-bar');
+        const lateralBarLeave = document.querySelector('.lateral-bar-userDiv-leave');
+        const headerMenu = document.querySelector('.deeper-header-menu-icon');
+
+        lateralBarLeave.addEventListener('click', () => {
+            lateralBar.style.left = '-35%';
+        });
+        headerMenu.addEventListener('click', () => {
+            lateralBar.style.left = '0%';
+        });
+    </script>
 </body>
 </html>
