@@ -18,7 +18,7 @@
             <div class="addLivro-main-form-col">
                 <div class="addLivro-main-form-col-part">
                     <div class="addLivro-main-form-col-part-title">
-                        <img src="" class="addLivro-main-form-col-part-title-icon"/>
+                        <img src="./imagens/Basics_icon.png" class="addLivro-main-form-col-part-title-icon"/>
                         <h2 class="addLivro-main-form-col-part-title-text">Informações básicas</h2>
                     </div>
                     <div class="input-div-type-1">
@@ -37,8 +37,12 @@
                             <span class="obligate-div-type-1">*</span>
                             <span class="message-div-type-1">Teste de erro</span>
                         </div>
-                        <div class="input-div-type-1-block">
-                            <input type="text" class="input-div-type-2-block-insert" placeholder="Selecione o tipo"/>
+                        <div class="input-div-type-5-block">
+                            <select name="Tipos" class="input-div-type-5-block-insert" placeholder="Selecione o tipo">
+                                <option value="1" class="input-div-type-5-block-insert-option">Capa mole</option>
+                                <option value="2" class="input-div-type-5-block-insert-option">Capa dura</option>
+                                <option value="2" class="input-div-type-5-block-insert-option">Ebook</option>
+                            </select>
                             <img src="./imagens/expand_icon.png" class="input-div-type-2-block-expand"/>
                         </div>
                     </div>
@@ -205,7 +209,7 @@
             <div class="addLivro-main-form-col">
                 <div class="addLivro-main-form-col-part">
                     <div class="addLivro-main-form-col-part-title">
-                        <img src="" class="addLivro-main-form-col-part-title-icon"/>
+                        <img src="./imagens/Description_icon.png" class="addLivro-main-form-col-part-title-icon"/>
                         <h2 class="addLivro-main-form-col-part-title-text">Descrição</h2>
                     </div>
                     <div class="input-div-type-1">
@@ -223,7 +227,7 @@
                 </div>
                 <div class="addLivro-main-form-col-part">
                     <div class="addLivro-main-form-col-part-title">
-                        <img src="" class="addLivro-main-form-col-part-title-icon"/>
+                        <img src="./imagens/others_icon.png" class="addLivro-main-form-col-part-title-icon"/>
                         <h2 class="addLivro-main-form-col-part-title-text">Informações adicionais</h2>
                     </div>
                     <div class="input-doiuble-line">
@@ -233,8 +237,15 @@
                             <span class="obligate-div-type-1">*</span>
                             <span class="message-div-type-2">Teste de erro</span>
                         </div>
-                        <div class="input-div-type-1-block">
-                            <input type="text" class="input-div-type-1-block-insert" placeholder="Ex: 14 anos"/>
+                        <div class="input-div-type-5-block">
+                            <select name="Idades" class="input-div-type-5-block-insert" placeholder="Selecione a idade mínima">
+                                <option value="1" class="input-div-type-5-block-insert-option">+3</option>
+                                <option value="2" class="input-div-type-5-block-insert-option">+5</option>
+                                <option value="2" class="input-div-type-5-block-insert-option">+10</option>
+                                <option value="2" class="input-div-type-5-block-insert-option">+14</option>
+                                <option value="2" class="input-div-type-5-block-insert-option">+18</option>
+                            </select>
+                            <img src="./imagens/expand_icon.png" class="input-div-type-2-block-expand"/>
                         </div>
                         </div>
                         <div class="input-div-type-2">
@@ -243,8 +254,13 @@
                             <span class="obligate-div-type-1">*</span>
                             <span class="message-div-type-2">Teste de erro</span>
                         </div>
-                        <div class="input-div-type-1-block">
-                            <input type="text" class="input-div-type-1-block-insert" placeholder="Selecione o idioma"/>
+                        <div class="input-div-type-5-block">
+                            <select name="Idiomas" class="input-div-type-5-block-insert" placeholder="Selecione o Idioma">
+                                <option value="1" class="input-div-type-5-block-insert-option">Português</option>
+                                <option value="2" class="input-div-type-5-block-insert-option">Inglês</option>
+                                <option value="2" class="input-div-type-5-block-insert-option">Espanhol</option>
+                            </select>
+                            <img src="./imagens/expand_icon.png" class="input-div-type-2-block-expand"/>
                         </div>
                         </div>
                     </div>
@@ -268,14 +284,45 @@
                             <span class="message-div-type-2">Teste de erro</span>
                         </div>
                         <div class="input-div-type-3-block">
-                            <img src="" class="input-div-type-3-block-icon"/>
+                            <img src="./imagens/date_icon.png" class="input-div-type-3-block-icon"/>
                             <div class="input-div-type-3-block-divisor"></div>
                             <input type="date" class="input-div-type-3-block-insert" placeholder="Selecione a data"/>
                         </div>
                         </div>
                     </div>
-                    <div class="col-part-divisor"></div>
+                    <div class="input-div-type-4">
+                        <div class="input-div-type-4-block">
+                            <input type="file" class="input-div-type-4-block-insert" placeholder="Ex:Companhia das Letras"/>
+                            <img src="./imagens/image_icon.png" class="input-div-type-4-block-icon"/>
+                            <h2 class="input-div-type-4-block-title">Clique para selecionar</h2>
+                            <h3 class="input-div-type-4-bloc-subtitle">ou arraste a imagem aqui</h3>
+                            <h3 class="input-div-type-4-bloc-subtitle">Formato: jpg, png e Webp</h3>
+                        </div>
+                    </div>
+                    <div class="input-div-type-1">
+                        <div class="input-div-type-1-texts">
+                            <label class="label-div-type-1">Literatura do livro</label>
+                            <span class="obligate-div-type-1">*</span>
+                            <span class="message-div-type-1">Teste de erro</span>
+                        </div>
+                        <div class="input-div-type-5-block">
+                            <select name="Literaturas" class="input-div-type-5-block-insert" placeholder="Selecione a literatura">
+                                <option value="1" class="input-div-type-5-block-insert-option">Literatura Estrangeira</option>
+                                <option value="2" class="input-div-type-5-block-insert-option">Literatura Nacional</option>
+                            </select>
+                            <img src="./imagens/expand_icon.png" class="input-div-type-2-block-expand"/>
+                        </div>
+                    </div>
                 </div>
+            </div>
+            <div class="addLivro-main-form-footer">
+                <a class="addLivro-main-form-footer-cancelar">
+                    <h3 class="addLivro-main-form-footer-cancelar-text">Cancelar</h3>
+                </a>
+                <button class="addLivro-main-form-footer-registrar">
+                    <img src="./imagens/file_icon.png" class="addLivro-main-form-footer-registrar-icon"/>
+                    <h2 class="addLivro-main-form-footer-registrar-title">REGISTRAR</h2>
+                </button>
             </div>
         </section>
     </main>
