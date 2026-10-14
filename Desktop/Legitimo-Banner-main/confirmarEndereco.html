@@ -1,0 +1,311 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Confirmar Endereço</title>
+
+    <link rel="stylesheet" href="./addLivro.css">
+    <link rel="stylesheet" href="./confirmarEndereco.css">
+    <link rel="stylesheet" href="./carrinho.css"/>
+</head>
+
+<body>
+    <section class="main-carrinho-header">
+            <div class="main-carrinho-header-item">
+                <img src="./imagens/KartA.png" class="main-carrinho-header-item-icon"/>
+                <h2 class="main-carrinho-header-item-text carrinhos-active">1.Carrinho</h2>
+            </div>
+            <div class="main-carrinho-header-item">
+                <img src="./imagens/LocalD.png" class="main-carrinho-header-item-icon"/>
+                <h2 class="main-carrinho-header-item-text carrinhos-inactive">2.Confirmar endereço</h2>
+            </div>
+            <div class="main-carrinho-header-item">
+                <img src="./imagens/BuyD.png" class="main-carrinho-header-item-icon"/>
+                <h2 class="main-carrinho-header-item-text carrinhos-inactive">3.Confirmar pagamento</h2>
+            </div>
+        </section>
+    <main class="addLivro-main">
+
+        <section class="addLivro-main-form">
+
+            <!-- Cabeçalho exclusivo desta tela -->
+            <header class="confirmarEndereco-header">
+
+                <div class="confirmarEndereco-header-title">
+                    <img
+                        src="./imagens/Mapping_icon.png"
+                        class="confirmarEndereco-header-icon"
+                        alt=""
+                    >
+
+                    <h1>Antes de tudo, confirme o seu endereço</h1>
+                </div>
+
+                <p class="confirmarEndereco-header-subtitle">
+                    Ajuste-o caso não esteja correto
+                </p>
+
+            </header>
+
+            <form class="confirmarEndereco-content">
+
+                <div class="confirmarEndereco-columns">
+
+                    <!-- Coluna esquerda -->
+                    <div class="addLivro-main-form-col-part">
+
+                        <div class="input-div-type-1">
+                            <div class="input-div-type-1-texts">
+                                <label for="cep" class="label-div-type-1">
+                                    CEP
+                                </label>
+                                <span class="obligate-div-type-1">*</span>
+                            </div>
+
+                            <div class="input-div-type-1-block">
+                                <input
+                                    type="text"
+                                    id="cep"
+                                    name="cep"
+                                    class="input-div-type-1-block-insert"
+                                    placeholder="Digite seu CEP"
+                                    required
+                                >
+                            </div>
+                        </div>
+
+                        <div class="input-div-type-1">
+                            <div class="input-div-type-1-texts">
+                                <label for="uf" class="label-div-type-1">
+                                    UF
+                                </label>
+                                <span class="obligate-div-type-1">*</span>
+                            </div>
+
+                            <div class="input-div-type-5-block">
+                                <select
+                                    id="uf"
+                                    name="uf"
+                                    class="input-div-type-5-block-insert"
+                                    required
+                                >
+                                    <option value="" selected disabled>
+                                        Selecione seu estado brasileiro
+                                    </option>
+                                    <option value="AC">AC</option>
+                                    <option value="AL">AL</option>
+                                    <option value="AP">AP</option>
+                                    <option value="AM">AM</option>
+                                    <option value="BA">BA</option>
+                                    <option value="CE">CE</option>
+                                    <option value="DF">DF</option>
+                                    <option value="ES">ES</option>
+                                    <option value="GO">GO</option>
+                                    <option value="MA">MA</option>
+                                    <option value="MT">MT</option>
+                                    <option value="MS">MS</option>
+                                    <option value="MG">MG</option>
+                                    <option value="PA">PA</option>
+                                    <option value="PB">PB</option>
+                                    <option value="PR">PR</option>
+                                    <option value="PE">PE</option>
+                                    <option value="PI">PI</option>
+                                    <option value="RJ">RJ</option>
+                                    <option value="RN">RN</option>
+                                    <option value="RS">RS</option>
+                                    <option value="RO">RO</option>
+                                    <option value="RR">RR</option>
+                                    <option value="SC">SC</option>
+                                    <option value="SP">SP</option>
+                                    <option value="SE">SE</option>
+                                    <option value="TO">TO</option>
+                                </select>
+
+                                <img
+                                    src="./imagens/expand_icon.png"
+                                    class="input-div-type-2-block-expand"
+                                    alt=""
+                                >
+                            </div>
+                        </div>
+
+                        <div class="input-div-type-1">
+                            <div class="input-div-type-1-texts">
+                                <label for="cidade" class="label-div-type-1">
+                                    Cidade
+                                </label>
+                                <span class="obligate-div-type-1">*</span>
+                            </div>
+
+                            <div class="input-div-type-1-block">
+                                <input
+                                    type="text"
+                                    id="cidade"
+                                    name="cidade"
+                                    class="input-div-type-1-block-insert"
+                                    placeholder="Digite o nome da sua cidade"
+                                    required
+                                >
+                            </div>
+                        </div>
+
+                        <div class="input-div-type-1">
+                            <div class="input-div-type-1-texts">
+                                <label for="bairro" class="label-div-type-1">
+                                    Bairro
+                                </label>
+                                <span class="obligate-div-type-1">*</span>
+                            </div>
+
+                            <div class="input-div-type-1-block">
+                                <input
+                                    type="text"
+                                    id="bairro"
+                                    name="bairro"
+                                    class="input-div-type-1-block-insert"
+                                    placeholder="Digite o nome do seu bairro"
+                                    required
+                                >
+                            </div>
+                        </div>
+
+                        <a href="#" class="confirmarEndereco-back">
+                            <img src="./imagens/arrowAddress_icon.png" class="back-address-icon"></span>
+                            Voltar
+                        </a>
+
+                    </div>
+
+                    <!-- Coluna direita -->
+                    <div class="addLivro-main-form-col-part">
+
+                        <div class="input-div-type-1">
+                            <div class="input-div-type-1-texts">
+                                <label for="numero" class="label-div-type-1">
+                                    Número
+                                </label>
+                                <span class="obligate-div-type-1">*</span>
+                            </div>
+
+                            <div class="input-div-type-1-block">
+                                <input
+                                    type="text"
+                                    id="numero"
+                                    name="numero"
+                                    class="input-div-type-1-block-insert"
+                                    placeholder="Digite o seu número de endereço"
+                                    required
+                                >
+                            </div>
+                        </div>
+
+                        <div class="input-div-type-1">
+                            <div class="input-div-type-1-texts">
+                                <label
+                                    for="logradouro"
+                                    class="label-div-type-1"
+                                >
+                                    Logradouro
+                                </label>
+                                <span class="obligate-div-type-1">*</span>
+                            </div>
+
+                            <div class="input-div-type-1-block">
+                                <input
+                                    type="text"
+                                    id="logradouro"
+                                    name="logradouro"
+                                    class="input-div-type-1-block-insert"
+                                    placeholder="Digite o nome do seu logradouro"
+                                    required
+                                >
+                            </div>
+                        </div>
+
+                        <div class="input-div-type-1">
+                            <div class="input-div-type-1-texts">
+                                <label
+                                    for="complemento"
+                                    class="label-div-type-1"
+                                >
+                                    Complemento do endereço
+                                </label>
+                            </div>
+
+                            <div class="input-div-type-1-block-long">
+                                <textarea
+                                    id="complemento"
+                                    name="complemento"
+                                    class="input-div-type-1-block-insertLong"
+                                    rows="6"
+                                    placeholder="Deixe aqui algo importante do seu endereço que não pedimos acima..."
+                                ></textarea>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Rodapé: reutiliza as classes existentes -->
+                <div class="addLivro-main-form-footer">
+
+                    <button
+    type="submit"
+    class="addLivro-main-form-footer-registrar"
+>
+    <img
+        src="./imagens/correct_icon.png"
+        alt="✓"
+        class="confirmarEndereco-check"
+    />
+    <h2 class="addLivro-main-form-footer-registrar-title">
+        ENDEREÇO CORRETO
+    </h2>
+</button>
+
+<button
+    type="button"
+    class="addLivro-main-form-footer-cancelar"
+    >
+                            <img
+                            src="./imagens/closeAddress_icon.png"
+                            alt="×"
+                            class="confirmarEndereco-cancel-icon"
+                            />
+                            <h3 class="addLivro-main-form-footer-cancelar-text">
+                                CANCELAR
+                            </h3>
+                    </button>
+
+                </div>
+
+            </form>
+
+        </section>
+
+    </main>
+    <script>
+        document.querySelectorAll(".input-div-type-2-block-expand").forEach(img => {
+    let ativo = false;
+
+    img.addEventListener("click", function () {
+        const container = this.closest(".input-div-type-5-block");
+        const select = container.querySelector(".input-div-type-5-block-insert");
+
+        if (!ativo) {
+            select.showPicker();
+            ativo = true;
+        } else {
+            select.blur();
+            ativo = false;
+        }
+    });
+});
+    </script>
+</body>
+</html>
